@@ -32,17 +32,6 @@ var name = 'Tyler';
 
 
 
-//Write a function called adder that uses the 'arguments' keyword that comes with every function to
-//loop over all the arguments the function received, add them all together, then return the result.
-//Save the result of the return value from your adder function, then alert "The Total Number was " + the number that was
-//returned from adder.
-
-  //Code Here
-
-
-//Next Problem
-
-
 
 //What is the difference between arguments and parameters?
 
