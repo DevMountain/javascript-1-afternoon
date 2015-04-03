@@ -1,19 +1,29 @@
 //Once you complete a problem, open up Chrome and check the answer in the console.
 
 
-var name = 'Tyler';
+var name= "Tyler";
 //Create a function called isTyler that accepts name as it's only argument.
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
-
+var myTyler = function(name) {
+	if (name === "Tyler") {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
 
 //Next problem
 
 
 
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
-
+var getName = function() {
+	var userName = prompt("What is your name?, Enter Your Name Here...");
+	return userName;
+}
 
   //Code Here
 
@@ -26,7 +36,9 @@ var name = 'Tyler';
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-
+var welcome = function() {
+	alert("welcome " + getName());
+}
 
 //Next problem
 
@@ -36,6 +48,7 @@ var name = 'Tyler';
 //What is the difference between arguments and parameters?
 
   //Answer Here
+  var answer = "parameters are the place-holders used locally in functions and are filled by Arguments. Arguments are used as the values are entered into the parameters";
 
 
 //Next problem
@@ -46,7 +59,14 @@ var name = 'Tyler';
 
 
   //Answer Here
-
+var FalseyValuesAre = {
+	one: null,
+	two: NaN,
+	three: undefined,
+	four: 0,
+	five: "" + "Empty Strings",
+	six: false 
+};
 
 
 //Next Problem
@@ -56,25 +76,34 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
+  function myName() {
+  	return "Taylor"
+  }
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
+  var newMyName = myName();
 
 //Now alert the result of invoking newMyName
-
-
-
+alert(newMyName);
 //Next problem
 
 
-
 //Create a function called outerFn which returns an anonymous function which returns your name.
+function outerFn() {
+	return function() {
+		return "Taylor Miller";
+	};
+};
+
 
   //Code Here
 
 //Now save the result of invoking outerFn into a variable called innerFn.
+var innerFn = outerFn(); 
 
   //Code Here
 
 //Now invoke innerFn.
+innerFn();
