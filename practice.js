@@ -89,7 +89,7 @@ alert(newMyName);
 
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
-function outerFn() {
+var outerFn = function {
 	return function() {
 		return "ryan brudnicki";
 	};
@@ -102,6 +102,6 @@ function outerFn() {
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-var innerFn = outerFn()();
+var innerFn = outerFn();
 //Now invoke innerFn.
 console.log(innerFn);
