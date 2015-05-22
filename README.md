@@ -17,3 +17,5 @@ JS-Basics
   - global and local scope
   - anonymous functions
   - return values and how to save the returned value to another variable
+  - be able to define what a closure is
+  - be able to identify when a closure is being used
