@@ -68,9 +68,13 @@ var makeCounter = function(){
   (which invokes the original function that was passed in) that can only ever be executed once.
 */
 
+var used = false;
 var doStuff = function(paramFunct){
   return function(){
-
+    if (used === false) {
+      paramFunct();
+      used = true;
+    };
     return 0;
   }
 }
@@ -87,6 +91,13 @@ var doStuff = function(paramFunct){
   Now, in 'fnCounter', allow the anonymous funciton to be invoked 'N' number of times.
   After it's been invoked 'N' number of times, return 'STOP'.
 */
+
+var fnCounter = function(pFunc , N) {
+  for (var i = 0; i < N; i++) {
+    pFunc();
+  };
+  return 'STOP';
+}
 
 
 
@@ -120,18 +131,13 @@ var doStuff = function(paramFunct){
 
   Fix the counter function so that it works the way you expect it to work. (logging 1 then 2 then 3, etc)
 */
-
-var counterFunct = function(num){
-  return function(){
-    return num;
-  }
-}
   var counter = function(){
     for (var i=1; i<=5; i++) {
-      var innerFunct = counterFunct(i);
-      setTimeout( function timer(){
-          console.log( innerFunct() );
-      }, i*1000 );
+      (function(index){
+        setTimeout( function timer(){
+            console.log( index );
+        }, i*1000 );
+      }(i))
     }
   };
 
@@ -154,5 +160,21 @@ var counterFunct = function(num){
   *Hint: Don't let this fool you. Break down what's really happening here.
 */
 
-var funcArray[];
+var funcArray = [];
+funcArray[0] = function() {
+  funcArray.push(funcArray[0]);
+  return funcArray.length;
+}
+
+/*
+//This also works, but seems less like what you want:
+
+var counter = 0;
+var funcArray = [];
+for(var i = 0; i < 6; i++){
+  funcArray[i] = function(){
+    return counter++;
+  }
+}
+*/
 
