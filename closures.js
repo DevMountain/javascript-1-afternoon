@@ -58,8 +58,7 @@ var callFriend = function(){
 
 
 /*
-  Write a function that accepts another function as it's first argument and returns a new function
-  (which invokes the original function that was passed in) that can only ever be executed once.
+  Write a function that does something simple (console, alert, etc). Write a second function that accepts the first function as it's first parameter. The second function should return a new third function which, when invoked, invokes the first, original function that was passed in, but will only ever do so once.
 */
 
   //Code Here
