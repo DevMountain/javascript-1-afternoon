@@ -22,4 +22,5 @@ JS-Basics
 
 ### Debugging/Visualization tools : 
 One of the biggest tools in a developers disposal is the debugger!  Chrome has one built in. To use it just open the index.html file in your browser.
+
 Another great tool for small and isolated pieces of code is : http://www.pythontutor.com/visualize.html#
