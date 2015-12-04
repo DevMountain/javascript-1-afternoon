@@ -100,7 +100,7 @@ var callFriend = function(){
     //Answer Here
 
 
-  Fix the counter function so that it works the way you expect it to work. (logging 1 then 2 then 3, etc)
+  Fix the counter function so that it works ? work. (logging 1 then 2 then 3, etc)
 */
 
     //Code Here
@@ -114,12 +114,12 @@ var callFriend = function(){
 /*
   Make the following code work
 
-  funcArray[0]() //0
-  funcArray[1]() //1
-  funcArray[2]() //2
-  funcArray[3]() //3
-  funcArray[4]() //4
-  funcArray[5]() //5
+  funcArray[0](); //0
+  funcArray[1](); //1
+  funcArray[2](); //2
+  funcArray[3](); //3
+  funcArray[4](); //4
+  funcArray[5](); //5
 
   *Hint: Don't let this fool you. Break down what's really happening here.
 */
