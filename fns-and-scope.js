@@ -64,7 +64,7 @@ var name = 'Tyler';
 
 //Now alert the result of invoking newMyName
 
-// alert(newMyName);
+
 
 //Next problem
 
