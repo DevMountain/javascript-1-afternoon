@@ -4,16 +4,16 @@ var outer = function(){
   var name = 'Tyler';
   return function(){
     return 'The original name was ' + name;
-  }
-}
+  };
+};
 //Above you're given a function that returns another function which has a closure over the name variable.
 //Invoke outer saving the return value into another variable called 'inner'.
 
-  //Code Here
+var inner = outer();
 
 //Once you do that, invoke inner.
 
-  //Code Here
+inner();
 
 
 
@@ -32,8 +32,14 @@ var callFriend = function(){
 //Above you're given a callFriend function that returns another function.
 //Do what you need to do in order to call your function and get 'Calling Jake at 435-215-9248' in your console.
 
-  //Code Here
-
+var callFriend = function(){
+  var friend = 'Jake';
+  function callF(number){
+    callF("435-215-9248");
+    return 'Calling ' + friend + ' at ' + number;
+  }
+  return callF;
+};
 
 
 //Next Problem
@@ -44,7 +50,11 @@ var callFriend = function(){
   Write a function called makeCounter that makes the following code work properly.
 */
 
-  //Code Here
+function makeCounter() {
+  for (var i = 0; i < count.length; i++) {
+
+  }
+}
   var count = makeCounter();
   count(); // 1
   count(); // 2
@@ -58,13 +68,33 @@ var callFriend = function(){
 
 
 /*
-  Write a function named codeLove that returns the string 'I love code'. Write a second function named codeFriend that accepts the first function as it's first parameter. The second function should return a new third function. Store the third function in a variable, codeEcho which, when invoked, invokes the first, original function that was passed in, but will only ever do so once (returns null after first invocation).
+  Write a function named codeLove that returns the string 'I love code'.
+  Write a second function named codeFriend that accepts the first function as it's first parameter.
+    The second function should return a new third function.
+    Store the third function in a variable, codeEcho which, when invoked, invokes the first, original
+      function that was passed in, but will only ever do so once (returns null after first invocation).
 */
 
-  //Code Here
+function codeLove() {
+  return "I love code";
+}
 
+function codeFriend(func) {
+  var run = false;
+  return function thirdFunc() {
+    if (!run) {
+      run = true;
+      return func();
+    }
+      else {
+        return null;
+      }
+  };
+}
 
+var codeEcho = codeFriend(codeLove);
 
+codeEcho();
 //Next Problem
 
 
@@ -123,5 +153,3 @@ var callFriend = function(){
 
   *Hint: Don't let this fool you. Break down what's really happening here.
 */
-
-
