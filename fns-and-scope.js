@@ -104,8 +104,8 @@ alert(newMyName());
   //Code Here
 
   function outerFn() {
-  	function() {
-  		return "Rob St. Lezin"
+  	return function() {
+  		return "Rob St. Lezin";
   	}
   }
 
