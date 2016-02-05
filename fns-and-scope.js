@@ -2,11 +2,10 @@
 
 
 var name = 'Tyler';
-//Create a function called isTyler that accepts name as it's only argument.
+//Create a function called isTyler that accepts name as it's only parameter.
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
-
 
 //Next problem
 
@@ -56,6 +55,8 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
+  
+
 
 //Now save the function definition of myName into a new variable called newMyName
 
