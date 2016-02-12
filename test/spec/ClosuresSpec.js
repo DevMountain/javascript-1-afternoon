@@ -36,6 +36,34 @@ describe('closures', function () {
 		})
 	})
 
+  describe('fnCounter', function () {
+    it('should exist', function () {
+      expect(fnCounter).toBeDefined();
+    })
+    it('should invoke a function N times', function () {
+      var fn = function () {
+        return 'Hello'
+      }
+      var count = fnCounter(fn, 1);
+      var first = count();
+      var second = count();
+      expect(first).toBe('Hello');
+      expect(second).toBe('STOP')
+    })
+    
+    it('should invoke a function N times (10)', function () {
+      var fn = function () {
+        return 'Hello'
+      }
+      var times = 10;
+      var count = fnCounter(fn, times);
+      for (var i = 0; i < times; i++){
+        expect(count()).toBe('Hello');
+      }
+      expect(count()).toBe('STOP')
+    })
+  })
+  
 	describe('codeLove', function () {
 		it('should exist', function () {
 			expect(codeLove).toBeDefined();
@@ -66,36 +94,9 @@ describe('closures', function () {
 			var second = codeEcho();
 			expect(first).toBe('I love code');
 		expect(second).toBeNull();
-	})
-})
+    })
+  })
 
-describe('fnCounter', function () {
-	it('should exist', function () {
-		expect(fnCounter).toBeDefined();
-	})
-	it('should invoke a function N times', function () {
-		var fn = function () {
-			return 'Hello'
-		}
-		var count = fnCounter(fn, 1);
-		var first = count();
-		var second = count();
-		expect(first).toBe('Hello');
-		expect(second).toBe('STOP')
-	})
-	
-	it('should invoke a function N times (10)', function () {
-		var fn = function () {
-			return 'Hello'
-		}
-		var times = 10;
-		var count = fnCounter(fn, times);
-		for (var i = 0; i < times; i++){
-			expect(count()).toBe('Hello');
-		}
-		expect(count()).toBe('STOP')
-	})
-	})
 
 describe('funcArray', function () {
 	it('should exist', function () {
