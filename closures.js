@@ -58,7 +58,7 @@ var callFriend = function(){
 
 
 /*
-  Write a function named codeLove that returns the string 'I love code'. Write a second function named codeFriend that accepts the first function as it's first parameter. The second function should return a new third function. Store the third function in a variable, codeEcho which, when invoked, invokes the first, original function that was passed in, but will only ever do so once (returns null after first invocation).
+  Similar to the last problem, write a function called 'fnCounter' that accepts two parameters. The first parameter, 'func', will be a function and the second parameter, 'N', will be a number. Now, in 'fnCounter', return an anonymous function that allows the parameter function to be invoked 'N' number of times. After it's been invoked 'N' number of times, return 'STOP'.
 */
 
   //Code Here
@@ -68,18 +68,18 @@ var callFriend = function(){
 //Next Problem
 
 
-
 /*
-  Now, similar to the last problem, write a function called 'fnCounter' that accepts two parameters. The first parameter will be an anonymous function and the second parameter, 'N', will be a number. Now, in 'fnCounter', allow the anonymous funciton to be invoked 'N' number of times. After it's been invoked 'N' number of times, return 'STOP'.
+  Write a function named codeLove that returns the string 'I love code'. Write a second function named codeFriend that accepts the first function as it's first parameter. The second function should return a new third function. Store the third function in a variable, codeEcho which, when invoked, invokes the first, original function that was passed in, but will only ever do so once (returns null after first invocation).
 */
 
+  //Code Here
+  
 
 
 //Next Problem
 
 
 
-/*
   var counter = function(){
     for (var i=1; i<=5; i++) {
       setTimeout( function timer(){
@@ -88,7 +88,8 @@ var callFriend = function(){
     }
   };
 
-  Above you have a function named counter. Examine the function (without running the code) then below write what you expect to happen when the funciton is invoked. *Hint: setTimeout calls a function or evaluates an expression after a specified number of milliseconds.
+/*
+  Above you have a function named counter. Examine the function (without running the code) then below write what you expect to happen when the function is invoked. *Hint: setTimeout calls a function or evaluates an expression after a specified number of milliseconds.
 
     //Answer Here
 
