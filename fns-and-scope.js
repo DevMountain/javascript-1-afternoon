@@ -7,6 +7,19 @@ var name = 'Tyler';
 
   //Code Here
 
+  function isTyler (name) {
+  	if (name === 'Tyler'){
+  		return true;
+  	}
+
+  	else{
+  		return false;
+  	}
+
+  }
+
+
+
 //Next problem
 
 
@@ -15,7 +28,10 @@ var name = 'Tyler';
 
 
   //Code Here
-
+function getName() {
+	var name = prompt('what is your name?');
+	return name;
+}
 
 //Next Problem
 
@@ -25,6 +41,11 @@ var name = 'Tyler';
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
+  function welcome() {
+  	var userName = getName();
+  	alert("welcome" + userName);
+
+  }
 
 
 //Next problem
@@ -36,13 +57,15 @@ var name = 'Tyler';
 
   //Answer Here
 
+  //arguments are values that can be entered into the function as parameters. The arguments are place holders for the parameters.
+
 
 //Next problem
 
 
 
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
-
+// NaN, null, undefined;
 
   //Answer Here
 
@@ -54,17 +77,23 @@ var name = 'Tyler';
 
 //Create a function called myName that returns your name
 
+
   //Code Here
   
+function myName(){
+	return "Rob";
+}
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
+var newMyName = myName;
+
 
 //Now alert the result of invoking newMyName
 
-
+alert(newMyName());
 
 //Next problem
 
@@ -74,8 +103,19 @@ var name = 'Tyler';
 
   //Code Here
 
+  function outerFn() {
+  	return function() {
+  		return "Rob St. Lezin";
+  	}
+  }
+
+
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
 
+  var innerFn = outerFn;
+
 //Now invoke innerFn.
+
+innerFn();
