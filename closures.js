@@ -44,14 +44,15 @@ var callFriend = function(){
 
 /*
   Write a function called makeCounter that makes the following code work properly.
-*/
-
-  //Code Here
-  var count = makeCounter();
-  count(); // 1
-  count(); // 2
-  count(); // 3
-  count(); // 4
+*/  //Code Here
+  
+  
+//Uncomment this once you make your function
+//   var count = makeCounter();
+//   count(); // 1
+//   count(); // 2
+//   count(); // 3
+//   count(); // 4
 
 
 
@@ -65,7 +66,7 @@ var callFriend = function(){
 // You will need to use the module pattern to achieve this.
 
 function counterFactory(value) {
-  return {
+  return {}
 
     // Code inc function
     // Code dec function
@@ -74,9 +75,6 @@ function counterFactory(value) {
 
 
 counter = counterFactory(10);
-
-counter.inc(); // 11
-counter.dec(); // 10
 
 
 
@@ -92,8 +90,9 @@ counter.dec(); // 10
 
     // code message function here
 
-    return message()
 
+    //Uncommment this to return the value of your invoked message function
+    // return message()
   }
 
   motivation('Billy', 'Bob'); // 'Your doing awesome keep it up Billy Bob
@@ -123,7 +122,8 @@ counter.dec(); // 10
 
   })();
 
-  module.publicMethod();
+//Uncomment this after you create your public method
+//   module.publicMethod();
 
 
 
