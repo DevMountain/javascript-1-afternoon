@@ -5,9 +5,11 @@ var outer = function(){
   return function(){
     return 'The original name was ' + name;
   }
-}
-//Above you're given a function that returns another function which has a closure over the name variable.
-//Invoke outer saving the return value into another variable called 'inner'.
+};
+
+
+// Above you're given a function that returns another function which has a closure over the name variable.
+// Invoke outer saving the return value into another variable called 'inner'.
 
   //Code Here
 
@@ -20,7 +22,6 @@ var outer = function(){
 //Next problem
 
 
-
 var callFriend = function(){
   var friend = 'Jake';
   function callF(number){
@@ -28,6 +29,7 @@ var callFriend = function(){
   }
   return callF;
 };
+
 
 //Above you're given a callFriend function that returns another function.
 //Do what you need to do in order to call your function and get 'Calling Jake at 435-215-9248' in your console.
@@ -56,58 +58,94 @@ var callFriend = function(){
 //Next Problem
 
 
+// Inside the function called counterFactory
+// return two functions that implement up/down counter.
+// The first function is called inc, this function is responsible for incrementing the value once
+// The second function is called dec, this function is responsible for decrementing the value by one
+// You will need to use the module pattern to achieve this.
 
-/*
-  Write a function named codeLove that returns the string 'I love code'. Write a second function named codeFriend that accepts the first function as it's first parameter. The second function should return a new third function. Store the third function in a variable, codeEcho which, when invoked, invokes the first, original function that was passed in, but will only ever do so once (returns null after first invocation).
-*/
+function counterFactory(value) {
+  return {
 
-  //Code Here
+    // Code inc function
+    // Code dec function
 
-
-
-//Next Problem
-
-
-
-/*
-  Now, similar to the last problem, write a function called 'fnCounter' that accepts two parameters. The first parameter will be an anonymous function and the second parameter, 'N', will be a number. Now, in 'fnCounter', allow the anonymous funciton to be invoked 'N' number of times. After it's been invoked 'N' number of times, return 'STOP'.
-*/
+}
 
 
+counter = counterFactory(10);
 
-//Next Problem
+counter.inc(); // 11
+counter.dec(); // 10
 
-
-
-/*
-  var counter = function(){
-    for (var i=1; i<=5; i++) {
-      setTimeout( function timer(){
-          console.log( i );
-      }, i*1000 );
-    }
-  };
-
-  Above you have a function named counter. Examine the function (without running the code) then below write what you expect to happen when the funciton is invoked. *Hint: setTimeout calls a function or evaluates an expression after a specified number of milliseconds.
-
-    //Answer Here
-
-
-  Now, run the function in your console and note what happpens.
-
-  Was your answer right or wrong?
-
-    //Answer Here
-
-
-  Fix the counter function so that it works the way you expect it to work. (logging 1 then 2 then 3, etc) (Note: No unit test for this one because of the timeout)
-*/
-
-    //Code Here
 
 
 
 //Next Problem
+
+
+// Inside the motivation function create another function called message that will return welcomeText + firstname + lastname
+
+  function motivation(firstname, lastname){
+
+    var welcomeText = 'Your doing awesome keep it up    ';
+
+    // code message function here
+
+    return message()
+
+  }
+
+  motivation('Billy', 'Bob'); // 'Your doing awesome keep it up Billy Bob
+
+
+
+
+// Inside the return create a publicMethod property that is a function that invokes privateMethod. After you create the privateMethod
+// Invoke it by calling module.publicMethod(); outside the module scope
+
+  var module = (function() {
+    var person = {
+      name: "phillip",
+      age: 29,
+      location: 'Utah'
+    };
+
+    var privateMethod = function(){
+      return welcomeText + firstname + '  ' + lastname;
+    };
+
+    // Anything that is being returned is made public and can be invoked from outside our lexical scope
+
+    return {
+      // Code here
+    };
+
+  })();
+
+  module.publicMethod();
+
+
+
+
+// Here we have a for loop that will iterate as long as i is less than or equal to 5. What we need to do is console.log(i)
+// So that it logs ( 1 then 2 then 3, etc). Run this code in your console to see what the output is.
+
+
+  for (var i = 0; i <= 5; i++) {
+    setTimeout(function() {
+      console.log(i)
+    }, i * 1000)
+  }
+
+
+  // To make this code work you will need to create a new scope for every iteration.
+
+
+
+
+
+
 
 
 
