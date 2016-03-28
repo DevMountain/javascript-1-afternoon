@@ -1,5 +1,4 @@
-//Once you complete a problem, open up Chrome and check the answer in the console.
-
+//////////////////PROBLEM 1////////////////////
 
 var name = 'Tyler';
 //Create a function called isTyler that accepts name as it's only parameter.
@@ -7,8 +6,7 @@ var name = 'Tyler';
 
   //Code Here
 
-//Next problem
-
+//////////////////PROBLEM 2////////////////////
 
 
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
@@ -17,7 +15,7 @@ var name = 'Tyler';
   //Code Here
 
 
-//Next Problem
+//////////////////PROBLEM 3////////////////////
 
 
 
@@ -27,7 +25,7 @@ var name = 'Tyler';
   //Code Here
 
 
-//Next problem
+//////////////////PROBLEM 4////////////////////
 
 
 
@@ -37,7 +35,7 @@ var name = 'Tyler';
   //Answer Here
 
 
-//Next problem
+//////////////////PROBLEM 5////////////////////
 
 
 
@@ -48,7 +46,7 @@ var name = 'Tyler';
 
 
 
-//Next Problem
+//////////////////PROBLEM 6////////////////////
 
 
 
@@ -66,7 +64,7 @@ var name = 'Tyler';
 
 
 
-//Next problem
+//////////////////PROBLEM 7////////////////////
 
 
 

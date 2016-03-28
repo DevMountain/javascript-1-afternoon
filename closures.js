@@ -1,5 +1,3 @@
-//Once you complete a problem, open up Chrome and check the answer in the console.
-
 var outer = function(){
   var name = 'Tyler';
   return function(){
@@ -7,7 +5,7 @@ var outer = function(){
   }
 };
 
-
+//////////////////PROBLEM 1////////////////////
 // Above you're given a function that returns another function which has a closure over the name variable.
 // Invoke outer saving the return value into another variable called 'inner'.
 
@@ -19,7 +17,7 @@ var outer = function(){
 
 
 
-//Next problem
+//////////////////PROBLEM 2////////////////////
 
 
 var callFriend = function(){
@@ -38,7 +36,7 @@ var callFriend = function(){
 
 
 
-//Next Problem
+//////////////////PROBLEM 3////////////////////
 
 
 
@@ -56,7 +54,7 @@ var callFriend = function(){
 
 
 
-//Next Problem
+//////////////////PROBLEM 4////////////////////
 
 
 // Inside the function called counterFactory
@@ -79,7 +77,7 @@ counter = counterFactory(10);
 
 
 
-//Next Problem
+//////////////////PROBLEM 5////////////////////
 
 
 // Inside the motivation function create another function called message that will return welcomeText + firstname + lastname
@@ -99,7 +97,7 @@ counter = counterFactory(10);
 
 
 
-
+//////////////////PROBLEM 6////////////////////
 // Inside the return create a publicMethod property that is a function that invokes privateMethod. After you create the privateMethod
 // Invoke it by calling module.publicMethod(); outside the module scope
 
@@ -127,7 +125,7 @@ counter = counterFactory(10);
 
 
 
-
+//////////////////PROBLEM 7////////////////////
 // Here we have a for loop that will iterate as long as i is less than or equal to 5. What we need to do is console.log(i)
 // So that it logs ( 1 then 2 then 3, etc). Run this code in your console to see what the output is.
 
@@ -147,7 +145,7 @@ counter = counterFactory(10);
 
 
 
-
+//////////////////PROBLEM 8////////////////////
 
 /*
   Make the following code work
