@@ -12,6 +12,21 @@ describe('closures', function () {
 		})
 	})
 
+	describe('makeCall', function () {
+		it('should exist', function () {
+			expect(makeCall).toBeDefined();
+		})
+		it('should be a function', function () {
+			expect(makeCall).toEqual(jasmine.any(Function));
+		})
+		it('should be the callFriend function', function () {
+			expect(JSON.stringify(makeCall)).toEqual(JSON.stringify(callFriend()));
+		})
+		//it('should return Calling Jake at 435-215-9248', function () {
+		//	expect( makeCall('435-215-9248')).toBe('Calling Jake at 435-215-9248');
+        //
+		//})
+	})
 
 
 	describe('makeCounter', function () {
@@ -36,66 +51,6 @@ describe('closures', function () {
 		})
 	})
 
-	describe('codeLove', function () {
-		it('should exist', function () {
-			expect(codeLove).toBeDefined();
-		})
-		it('should return the string "I love code"', function () {
-			expect(codeLove()).toBe('I love code');
-		})
-	})
-
-	describe('codeFriend', function () {
-		it('should exist', function () {
-			expect(codeFriend).toBeDefined();
-		});
-		it('should return a function', function () {
-			expect(codeFriend()).toEqual(jasmine.any(Function));
-		})
-	})
-
-	describe('codeEcho', function () {
-		it('should exist', function () {
-			expect(codeEcho).toBeDefined();
-		})
-		it('should be a function', function () {
-			expect(codeEcho).toEqual(jasmine.any(Function));
-		})
-		it('should invoke codeLove only once', function() {
-			var first = codeEcho();
-			var second = codeEcho();
-			expect(first).toBe('I love code');
-		expect(second).toBeNull();
-	})
-})
-
-describe('fnCounter', function () {
-	it('should exist', function () {
-		expect(fnCounter).toBeDefined();
-	})
-	it('should invoke a function N times', function () {
-		var fn = function () {
-			return 'Hello'
-		}
-		var count = fnCounter(fn, 1);
-		var first = count();
-		var second = count();
-		expect(first).toBe('Hello');
-		expect(second).toBe('STOP')
-	})
-	
-	it('should invoke a function N times (10)', function () {
-		var fn = function () {
-			return 'Hello'
-		}
-		var times = 10;
-		var count = fnCounter(fn, times);
-		for (var i = 0; i < times; i++){
-			expect(count()).toBe('Hello');
-		}
-		expect(count()).toBe('STOP')
-	})
-	})
 
 describe('funcArray', function () {
 	it('should exist', function () {

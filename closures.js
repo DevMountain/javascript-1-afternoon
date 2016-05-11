@@ -5,11 +5,16 @@ var outer = function(){
   }
 };
 
+
 //////////////////PROBLEM 1////////////////////
+
 // Above you're given a function that returns another function which has a closure over the name variable.
 // Invoke outer saving the return value into another variable called 'inner'.
 
-  //Code Here
+var inner = outer()
+inner()
+
+
 
 //Once you do that, invoke inner.
 
@@ -29,10 +34,15 @@ var callFriend = function(){
 };
 
 
-//Above you're given a callFriend function that returns another function.
-//Do what you need to do in order to call your function and get 'Calling Jake at 435-215-9248' in your console.
+// Above you're given a callFriend function that returns another function.
+// Create a makeCall function that when invoked logs  'Calling Jake at 435-215-9248' in your console.
 
   //Code Here
+
+var makeCall = callFriend();
+makeCall('435-215-9248');
+
+
 
 
 
@@ -90,6 +100,7 @@ counter = counterFactory(10);
 
 
     //Uncommment this to return the value of your invoked message function
+
     // return message()
   }
 
@@ -98,6 +109,7 @@ counter = counterFactory(10);
 
 
 //////////////////PROBLEM 6////////////////////
+
 // Inside the return create a publicMethod property that is a function that invokes privateMethod. After you create the privateMethod
 // Invoke it by calling module.publicMethod(); outside the module scope
 
@@ -140,10 +152,16 @@ counter = counterFactory(10);
   // To make this code work you will need to create a new scope for every iteration.
 
 
+function theFunc(number) {
+  return function() {
+    console.log(number);
+    return number
+
+  }
+}
 
 
-
-
+var funcArray = [theFunc(0),theFunc(1),theFunc(2),theFunc(3),theFunc(4),theFunc(5)];
 
 //////////////////PROBLEM 8////////////////////
 
