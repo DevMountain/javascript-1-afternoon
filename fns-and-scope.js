@@ -4,7 +4,12 @@ var name = 'Tyler';
 //Create a function called isTyler that accepts name as it's only parameter.
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
-  //Code Here
+  function isTyler (name) {
+   if  (name === "Tyler")
+    return true;
+    else
+    return false;
+  }
 
 //////////////////PROBLEM 2////////////////////
 
@@ -12,7 +17,10 @@ var name = 'Tyler';
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
 
-  //Code Here
+  function getName() {
+  var answer = prompt("What is your name?")
+  return answer;
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -22,7 +30,10 @@ var name = 'Tyler';
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
+  function welcome() {
+  var answer = getName()
+  alert("Welcome, " + answer);
+}
 
 
 //////////////////PROBLEM 4////////////////////
@@ -32,7 +43,7 @@ var name = 'Tyler';
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
+  //Arguments and parameters can be used interchangeably but parameters are the values that will be passing through the function while the arguments are the actual values. 
 
 
 //////////////////PROBLEM 5////////////////////
