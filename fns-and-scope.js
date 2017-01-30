@@ -43,7 +43,7 @@ var name = 'Tyler';
 
 //What is the difference between arguments and parameters?
 
-  //Arguments and parameters can be used interchangeably but parameters are the values that will be passing through the function while the arguments are the actual values. 
+  //Arguments and parameters can be used interchangeably but parameters are the values that will be passing through the function and act as placeholders until the arguments; the actual values, are called. 
 
 
 //////////////////PROBLEM 5////////////////////
@@ -53,7 +53,10 @@ var name = 'Tyler';
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-  //Answer Here
+  //(false), (0 zero), ("" empty string), (undefined), (null), (NaN) if any if these are returned than you have a falsy.
+ 
+
+
 
 
 
@@ -63,28 +66,32 @@ var name = 'Tyler';
 
 //Create a function called myName that returns your name
 
-  //Code Here
+function myName(name) {
+(name = "Daniel");
+return name
+}
+myName();
   
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
-
-//Now alert the result of invoking newMyName
-
-
-
+var newMyName = function myVar() {
+alert(newMyName);
+}
+  
 //////////////////PROBLEM 7////////////////////
 
 
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
-
+  function outerFn() {
+    return myName;
+  }
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-  //Code Here
+  var innerFn =  outerFn()
+
 
 //Now invoke innerFn.
