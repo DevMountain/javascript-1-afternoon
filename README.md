@@ -3,10 +3,10 @@
 JS-Basics
 =========
 
-##Objective
+## Objective
 Better understand Javascript fundamentals by completing a series of activities
 
-##Directions
+## Directions
 Fork this repo, clone your fork, then open fns-scopes.js and complete all the activities to make the spec runner pass it's tests (open the SpecRunner.html file in your browser). 
 *COMMIT AND PUSH YOUR CODE OFTEN!*
 
