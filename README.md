@@ -1,7 +1,7 @@
 <img src="https://devmounta.in/img/logowhiteblue.png" width="250" align="right">
 
 JS-Basics
-=========
+==========
 
 ## Objective
 Better understand Javascript fundamentals by completing a series of activities
