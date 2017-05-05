@@ -1,5 +1,22 @@
 describe('fns-and-scope', function () {
 
+	describe('Miscellaneous Errors', function() {
+		it('Type: ' + error.name, function() {
+			expect(error.name).toBe(undefined);
+		})
+		it('Message: ' + error.message, function() {
+			expect(error.message).toBe(undefined);
+		})
+		it('Filename: ' + error.fileName, function() {
+			expect(error.fileName).toBe(undefined);
+		})
+		it('Line #: ' + error.lineNumber, function() {
+			expect(error.lineNumber).toBe(undefined);
+		})
+		it('Column #: ' + error.columnNumber, function() {
+			expect(error.columnNumber).toBe(undefined);
+		})
+	})
 
 	describe('isTyler', function () {
 		it('should exist', function () {

@@ -1,3 +1,8 @@
+// Ignore the following two lines. They are designed to 
+// catch and report any miscellaneous errors in your code.
+var error = {};
+try {
+
 //////////////////PROBLEM 1////////////////////
 
 var name = 'Tyler';
@@ -77,3 +82,10 @@ var name = 'Tyler';
   //Code Here
 
 //Now invoke innerFn.
+
+
+// Ignore the following lines. They complete the error-catching block.
+} catch(err) {
+  console.log(err)
+  error = err;
+}
