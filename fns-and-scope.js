@@ -14,8 +14,11 @@ var name = 'Tyler';
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
 
 
-  //Code Here
+  function getName() {
+    return prompt('Please enter your name');
+  }
 
+//console.log('Problem 2: ', getName());
 
 //////////////////PROBLEM 3////////////////////
 
@@ -24,8 +27,9 @@ var name = 'Tyler';
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
-
+  function welcome(myFunc) {
+    return alert('Welcome ' + myFunc());
+  }
 
 //////////////////PROBLEM 4////////////////////
 
@@ -34,7 +38,8 @@ var name = 'Tyler';
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
+  //When declaring functions you give them parameters, when invoking functions
+  //you pass arguments.
 
 
 //////////////////PROBLEM 5////////////////////
@@ -44,7 +49,7 @@ var name = 'Tyler';
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-  //Answer Here
+  //
 
 
 
