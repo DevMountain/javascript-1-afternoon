@@ -5,7 +5,13 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
-
+function isTyler(name) {
+  if (name === "Tyler") {
+    return true;
+  } else {
+    return false;
+  }
+}
 //////////////////PROBLEM 2////////////////////
 
 
@@ -41,9 +47,7 @@ var name = 'Tyler';
 
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
-
   //Answer Here
-
 
 
 //////////////////PROBLEM 6////////////////////
@@ -53,7 +57,7 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
-  
+ 
 
 
 //Now save the function definition of myName into a new variable called newMyName
