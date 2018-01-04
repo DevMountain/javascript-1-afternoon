@@ -8,11 +8,13 @@ In this project, we'll provide practice JavaScript problems to help you better u
 
 * `Fork` this repository.
 * `Clone` your fork.
-* Open `fns-scopes.js`.
+* Open `./practice.js` with your code editor.
+* Open `./index.html` with your browser.
+
 
 ## Directions
 
-Complete all the activities inside of `fns-scopes.js` to make the spec runner pass it's tests. In order to check the progress of the spec runner, open `SpecRunner.html` with your browser. Remember to commit and push your code often. Good luck!
+Complete all the activities inside of `practice.js` to make the spec runner pass it's tests. In order to check the progress of the spec runner, open `SpecRunner.html` with your browser. Remember to commit and push your code often. Good luck!
 
 ## Tips and Tricks
 
