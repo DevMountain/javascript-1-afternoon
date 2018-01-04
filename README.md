@@ -16,8 +16,6 @@ Complete all the activities inside of `fns-scopes.js` to make the spec runner pa
 
 ## Tips and Tricks
 
-### Debugging/Visualization tools
-
 One of the biggest tools at the developer's disposal is the browser's built-in debugger. To use it, open `index.html` with your browser. Another great tool for small and isolated pieces of code is <a href="http://www.pythontutor.com/visualize.html#">Pyton Tutor</a>. Just make sure to change the code to `JavaScript ES6`.
 
 ## Contributions
