@@ -122,7 +122,18 @@ var dog={
 //Return mySum.
 
 //Code Here
-
+function looper(array){
+  var mySum =0;
+  for (i=0;i<array.length;i++){
+    if (array[i]%2!==0){
+      mySum+=array[i];
+    }
+    else if (array[i]>=100){
+      mySum+=array[i];
+    }
+  }
+  return mySum;
+}
 
 
 
