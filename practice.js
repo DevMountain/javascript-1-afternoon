@@ -39,7 +39,7 @@ function newGreeting(name){
 
 //Code Here
 
-
+function finalGreeting(){};
 
 
 //////////////////PROBLEM 4////////////////////  
@@ -48,7 +48,7 @@ function newGreeting(name){
 //"apples", "milk", "eggs", "bread"
 
   //Code Here
-  var groceries= ["apples","milk","eggs","bread"];
+  var groceries = ["apples","milk","eggs","bread"]
 
 
 //Write a function called doubleCheck that takes in an array 
@@ -106,7 +106,7 @@ var dog={
 //Store the result of invoking the bark method in a variable called ruff
 
   //Code Here
-  var ruff = dog.bark;
+  var ruff = dog.bark();
 
 
 
@@ -158,7 +158,7 @@ function math(num1, num2, callback) {
 //storing the result in the variable mathSum
 
   //Code Here
-  var mathsum= math(3,4,add());
+  var mathSum= math(3,4,add);
 
 
 
@@ -202,19 +202,19 @@ function pond() {
 //as strings
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['duck'];
+var globalScope = ['duck'];
 
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ['duck','rubberDuck'];
+var bathroomScope = ['duck','rubberDuck'];
 
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ['duck', 'sailorDuck', 'rubberDuck'];
+var bathtubScope = ['duck', 'sailorDuck', 'rubberDuck'];
 
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ['duck','realDuck'];
+var pondScope = ['duck','realDuck'];
 
 
 
@@ -225,10 +225,10 @@ let pondScope = ['duck','realDuck'];
 
   //Code Here
   function outerFn(){
-    return function anonymous(){
+    return function(){
       return "Kyle";
-    };
-  }
+    }
+  };
 
 
 //Now save the result of invoking outerFn into a variable called innerFn.
@@ -240,4 +240,4 @@ let pondScope = ['duck','realDuck'];
 //Now invoke innerFn and save the result to a variable called finalResult.
 
   //Code Here
-  var finalResult = innerFn;
+  var finalResult = innerFn();
