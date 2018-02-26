@@ -14,7 +14,9 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //plus the value of the name parameter. 
 
 //Code here
-
+function greeting (name){
+  return "Hello, "+name;
+};
 
 
 
@@ -25,7 +27,10 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 
 //Code Here
 
-
+var newGreeting = function(name){
+  var greet="Hello, "+name;
+  return greet;
+};
 
 
 //////////////////PROBLEM 3////////////////////
@@ -35,7 +40,7 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 
 //Code Here
 
-
+var finalGreeting = (name)=>"Hello, "+name;
 
 
 //////////////////PROBLEM 4////////////////////  
@@ -44,7 +49,7 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //"apples", "milk", "eggs", "bread"
 
   //Code Here
-  
+  var groceries = ["apples","milk","eggs","bread"]
 
 
 //Write a function called doubleCheck that takes in an array 
@@ -54,9 +59,21 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //doubleCheck should return the array.
 
   //Code Here
-  
+  function doubleCheck(array){
+    for (i=0;i<array.length;i++){
+      if (array[i]==="chocolate"){
+        return array;
+      }
+      else if (i=array.length-1){
+        array[array.length]="chocolate";
+      }
+    }
+  };
 
-
+// could also use a different function on this problem
+// array.push("chocolate"); outside of the for loop
+// if (array.includes("chocolate"))
+// indexOf tells you what position it is first found
 
 //////////////////PROBLEM 5////////////////////  
 
@@ -66,27 +83,34 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //and goodBoy (a boolean).
 
 //Code Here
-
+var dog={
+  name:"Bonzo",
+  color:"Brown",
+  age:4,
+  goodBoy:true
+};
 
 
 //...access the dog's name from the object and assign it to a 
 //variable called devMountainClassPet.
 
     //Code Here
-    
+    var devMountainClassPet=dog.name;
 
 
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof"
 
   //Code Here
-  
+  dog.bark=function(){
+    return "Woof woof";
+  }
 
 
 //Store the result of invoking the bark method in a variable called ruff
 
   //Code Here
-  
+  var ruff = dog.bark();
 
 
 
@@ -102,9 +126,20 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //Return mySum.
 
 //Code Here
+function looper(array){
+  var mySum =0;
+  for (i=0;i<array.length;i++){
+    if (array[i]%2!==0){
+      mySum+=array[i];
+    }
+    else if (array[i]>=100){
+      mySum+=array[i];
+    }
+  }
+  return mySum;
+}
 
-
-
+// also do if (array[i]===1 || array[i]>=100){};
 
 //////////////////PROBLEM 7////////////////////
 
@@ -118,15 +153,17 @@ function math(num1, num2, callback) {
 //returns the result of adding them together.
 
   //Code Here
-  
+  function add (x,y){
+    return x+y;
+  }
 
 
 //Now invoke math, passing in the numbers 3 and 4, and your add function,
 //storing the result in the variable mathSum
 
   //Code Here
-  
-
+  var mathSum= math(3,4,add);
+// no invocation parenthesis on the callback
 
 
 //////////////////PROBLEM 8////////////////////
@@ -143,7 +180,9 @@ function sampleCallbackTwo() {
 }
 
   //Code Here
- 
+ function invoker(callback){
+   return callback();
+ }
   
 
 
@@ -167,20 +206,27 @@ function pond() {
 //as strings
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
+var globalScope = ['duck'];
 
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
+var bathroomScope = ['duck','rubberDuck'];
 
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
+var bathtubScope = ['duck', 'sailorDuck', 'rubberDuck'];
 
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
+var pondScope = ['duck','realDuck'];
 
+// difference between let and var is scope--it changes with an
+// if block -- let is not available outside of parenthesis --
+// scoped to closest code blocks
+// do everything with lets if you can, if they aren't being
+// constants
+// const gets mad if you try to change it, it's supposed to be
+// constant
 
 
 //////////////////PROBLEM 10////////////////////
@@ -189,16 +235,20 @@ let pondScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
 //function which returns your name.
 
   //Code Here
-  
+  function outerFn(){
+    return function(){
+      return "Kyle";
+    }
+  };
 
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-  
+  var innerFn = outerFn();
   
 
 //Now invoke innerFn and save the result to a variable called finalResult.
 
   //Code Here
-  
+  var finalResult = innerFn();
