@@ -14,7 +14,9 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //plus the value of the name parameter. 
 
 //Code here
-
+function greeting (name){
+  return "Hello, "+name;
+};
 
 
 
@@ -25,7 +27,9 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 
 //Code Here
 
-
+function newGreeting(name){
+  var greet="Hello, "+name;
+};
 
 
 //////////////////PROBLEM 3////////////////////
@@ -44,7 +48,7 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //"apples", "milk", "eggs", "bread"
 
   //Code Here
-  
+  var groceries= ["apples","milk","eggs","bread"];
 
 
 //Write a function called doubleCheck that takes in an array 
