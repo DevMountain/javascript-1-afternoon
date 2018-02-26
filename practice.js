@@ -82,8 +82,8 @@ function newGreeting(name){
 var dog={
   name:"Bonzo",
   color:"Brown",
-  age:"4",
-  goodBoy:true;
+  age:4,
+  goodBoy:true
 };
 
 
@@ -149,14 +149,16 @@ function math(num1, num2, callback) {
 //returns the result of adding them together.
 
   //Code Here
-  
+  function add (x,y){
+    return x+y;
+  }
 
 
 //Now invoke math, passing in the numbers 3 and 4, and your add function,
 //storing the result in the variable mathSum
 
   //Code Here
-  
+  var mathsum= math(3,4,add());
 
 
 
