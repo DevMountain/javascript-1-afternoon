@@ -27,7 +27,7 @@ function greeting (name){
 
 //Code Here
 
-function newGreeting(name){
+var newGreeting = function(name){
   var greet="Hello, "+name;
   return greet;
 };
