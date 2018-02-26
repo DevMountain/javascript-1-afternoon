@@ -176,7 +176,9 @@ function sampleCallbackTwo() {
 }
 
   //Code Here
- 
+ function invoker(callback){
+   return callback();
+ }
   
 
 
@@ -200,19 +202,19 @@ function pond() {
 //as strings
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
+let globalScope = ['duck'];
 
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
+let bathroomScope = ['duck','rubberDuck'];
 
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
+let bathtubScope = ['duck', 'sailorDuck', 'rubberDuck'];
 
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
+let pondScope = ['duck','realDuck'];
 
 
 
@@ -222,16 +224,20 @@ let pondScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
 //function which returns your name.
 
   //Code Here
-  
+  function outerFn(){
+    return function anonymous(){
+      return "Kyle";
+    };
+  }
 
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-  
+  var innerFn = outerFn();
   
 
 //Now invoke innerFn and save the result to a variable called finalResult.
 
   //Code Here
-  
+  var finalResult = innerFn;
