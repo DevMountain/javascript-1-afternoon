@@ -70,7 +70,10 @@ var finalGreeting = (name)=>"Hello, "+name;
     }
   };
 
-
+// could also use a different function on this problem
+// array.push("chocolate"); outside of the for loop
+// if (array.includes("chocolate"))
+// indexOf tells you what position it is first found
 
 //////////////////PROBLEM 5////////////////////  
 
@@ -136,7 +139,7 @@ function looper(array){
   return mySum;
 }
 
-
+// also do if (array[i]===1 || array[i]>=100){};
 
 //////////////////PROBLEM 7////////////////////
 
@@ -160,7 +163,7 @@ function math(num1, num2, callback) {
 
   //Code Here
   var mathSum= math(3,4,add);
-
+// no invocation parenthesis on the callback
 
 
 //////////////////PROBLEM 8////////////////////
@@ -217,6 +220,13 @@ var bathtubScope = ['duck', 'sailorDuck', 'rubberDuck'];
 //This array should contain the variable names (as strings) accessible in the pond function.
 var pondScope = ['duck','realDuck'];
 
+// difference between let and var is scope--it changes with an
+// if block -- let is not available outside of parenthesis --
+// scoped to closest code blocks
+// do everything with lets if you can, if they aren't being
+// constants
+// const gets mad if you try to change it, it's supposed to be
+// constant
 
 
 //////////////////PROBLEM 10////////////////////
