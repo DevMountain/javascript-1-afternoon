@@ -21,7 +21,7 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
-//Name it newGreeting
+//Name it newGreeting (You must use a var for this instead of let or const)
 
 //Code Here
 
@@ -31,7 +31,7 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //////////////////PROBLEM 3////////////////////
 
 //Rewrite the function greeting as an arrow function.
-//Name it finalGreeting
+//Name it finalGreeting (You must use a var for this instead of let or const)
 
 //Code Here
 
