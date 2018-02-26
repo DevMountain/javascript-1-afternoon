@@ -29,6 +29,7 @@ function greeting (name){
 
 function newGreeting(name){
   var greet="Hello, "+name;
+  return greet;
 };
 
 
@@ -39,7 +40,7 @@ function newGreeting(name){
 
 //Code Here
 
-function finalGreeting(){};
+var finalGreeting = (name)=>"Hello, "+name;
 
 
 //////////////////PROBLEM 4////////////////////  
