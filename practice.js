@@ -1,11 +1,3 @@
-//=========DO NOT TOUCH THIS CODE=========//
-var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
-//============Continue below=============//
-
-
-//+++++++++ Start Here! All problems are below. +++++++++//
-
-
 //////////////////PROBLEM 1////////////////////
 
 //Create a function declaration called greeting that 
@@ -16,16 +8,12 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //Code here
 
 
-
-
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting (You must use a var for this instead of let or const)
 
 //Code Here
-
-
 
 
 //////////////////PROBLEM 3////////////////////
@@ -36,15 +24,12 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //Code Here
 
 
-
-
 //////////////////PROBLEM 4////////////////////  
 
 //Create an array called groceries with the values 
 //"apples", "milk", "eggs", "bread"
 
   //Code Here
-  
 
 
 //Write a function called doubleCheck that takes in an array 
@@ -54,7 +39,6 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //doubleCheck should return the array.
 
   //Code Here
-  
 
 
 
@@ -68,42 +52,35 @@ var greetingsEarthlings = { greeting, newGreeting, finalGreeting }
 //Code Here
 
 
-
 //...access the dog's name from the object and assign it to a 
 //variable called devMountainClassPet.
 
     //Code Here
-    
 
 
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof"
 
   //Code Here
-  
 
 
 //Store the result of invoking the bark method in a variable called ruff
 
   //Code Here
-  
-
 
 
 //////////////////PROBLEM 6////////////////////
 
 //Write a function called looper that takes in an array. looper should declare
-//a variable called mySum. looper should then loop through the array and check 
-//each element. 
+//a variable called mySum and set it equal to 0. looper should then loop through 
+//the array and check each element. 
 
 //If the element is odd, or if the element is greater than or equal to 100, add the element
-//to mySum.
+//to the mySum variable total. 
 
 //Return mySum.
 
 //Code Here
-
-
 
 
 //////////////////PROBLEM 7////////////////////
@@ -118,14 +95,12 @@ function math(num1, num2, callback) {
 //returns the result of adding them together.
 
   //Code Here
-  
 
 
 //Now invoke math, passing in the numbers 3 and 4, and your add function,
 //storing the result in the variable mathSum
 
   //Code Here
-  
 
 
 
@@ -143,8 +118,7 @@ function sampleCallbackTwo() {
 }
 
   //Code Here
- 
-  
+
 
 
 //////////////////PROBLEM 9////////////////////
@@ -162,6 +136,8 @@ function pond() {
   let realDuck = 'fluffy';
 }
 
+//There are 4 variables above: duck, rubberDuck, sailorDuck and realDuck
+//all within different scopes.
 //Given the functions and variables above, edit the arrays 
 //below to contain only the appropriate variable names 
 //as strings
