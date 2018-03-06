@@ -50,32 +50,6 @@ describe('js-day1-basic-assessment', function () {
 		})
 	})
 
-	describe('Properly created a function declaration, function expression, and arrow function - ', function(){
-		it('greeting should be hoisted', function () {
-			expect(typeof greetingsEarthlings.greeting).toBe('function');
-		})
-		it('greeting should be made with function keyword', function () {
-			var madeWithFunctionKeyword = greeting.prototype ? true : false
-			expect(madeWithFunctionKeyword).toBe(true);
-		})
-
-		it('newGreeting should not be hoisted', function () {
-			expect(greetingsEarthlings.newGreeting).toBe(undefined);
-		})
-		it('newGreeting should be made with function keyword', function () {
-			var madeWithFunctionKeyword = newGreeting.prototype ? true : false
-			expect(madeWithFunctionKeyword).toBe(true);
-		})
-
-		it('finalGreeting should not be hoisted', function () {
-			expect(greetingsEarthlings.finalGreeting).toBe(undefined);
-		})
-		it('finalGreeting should be an arrow function', function () {
-			var isArrowFunction = finalGreeting.prototype ? false : true
-			expect(isArrowFunction).toBe(true);
-		})
-	})
-
 	describe('Problem 4 - ', function () {
 		it('groceries should exist', function () {
 			expect(groceries).toBeDefined();
