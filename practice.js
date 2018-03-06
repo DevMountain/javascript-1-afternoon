@@ -1,9 +1,9 @@
 //////////////////PROBLEM 1////////////////////
 
-//Create a function declaration called greeting that 
+//Create a function declaration called greeting that
 //accepts name as its only parameter.
-//greeting should return the string "Hello, " 
-//plus the value of the name parameter. 
+//greeting should return the string "Hello, "
+//plus the value of the name parameter.
 
 //Code here
 
@@ -11,7 +11,7 @@
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
-//Name it newGreeting (You must use a var for this instead of let or const)
+//Name it newGreeting
 
 //Code Here
 
@@ -19,20 +19,20 @@
 //////////////////PROBLEM 3////////////////////
 
 //Rewrite the function greeting as an arrow function.
-//Name it finalGreeting (You must use a var for this instead of let or const)
+//Name it finalGreeting
 
 //Code Here
 
 
-//////////////////PROBLEM 4////////////////////  
+//////////////////PROBLEM 4////////////////////
 
-//Create an array called groceries with the values 
+//Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
   //Code Here
 
 
-//Write a function called doubleCheck that takes in an array 
+//Write a function called doubleCheck that takes in an array
 //as a parameter.
 
 //If the array does not contain "chocolate", add "chocolate".
@@ -42,7 +42,7 @@
 
 
 
-//////////////////PROBLEM 5////////////////////  
+//////////////////PROBLEM 5////////////////////
 
 //Create an object saved to the variable dog.
 //The dog object should have the following properties:
@@ -52,7 +52,7 @@
 //Code Here
 
 
-//...access the dog's name from the object and assign it to a 
+//...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
     //Code Here
@@ -72,11 +72,11 @@
 //////////////////PROBLEM 6////////////////////
 
 //Write a function called looper that takes in an array. looper should declare
-//a variable called mySum and set it equal to 0. looper should then loop through 
-//the array and check each element. 
+//a variable called mySum and set it equal to 0. looper should then loop through
+//the array and check each element.
 
 //If the element is odd, or if the element is greater than or equal to 100, add the element
-//to the mySum variable total. 
+//to the mySum variable total.
 
 //Return mySum.
 
@@ -91,7 +91,7 @@ function math(num1, num2, callback) {
   return callback(num1, num2)
 }
 
-//Write a function called add that takes in two parameters and 
+//Write a function called add that takes in two parameters and
 //returns the result of adding them together.
 
   //Code Here
@@ -106,7 +106,7 @@ function math(num1, num2, callback) {
 
 //////////////////PROBLEM 8////////////////////
 
-//Write a function called invoker that takes in one paramter, a callback function. 
+//Write a function called invoker that takes in one paramter, a callback function.
 //invoker should return the result of invoking the callback.
 
 function sampleCallbackOne() {
@@ -138,8 +138,8 @@ function pond() {
 
 //There are 4 variables above: duck, rubberDuck, sailorDuck and realDuck
 //all within different scopes.
-//Given the functions and variables above, edit the arrays 
-//below to contain only the appropriate variable names 
+//Given the functions and variables above, edit the arrays
+//below to contain only the appropriate variable names
 //as strings
 
 //This array should contain the variable names (as strings) accessible in the global scope.
@@ -161,20 +161,19 @@ let pondScope = ['duck', 'sailorDuck', 'rubberDuck', 'realDuck'];
 
 //////////////////PROBLEM 10////////////////////
 
-//Create a function called outerFn which returns an anonymous 
+//Create a function called outerFn which returns an anonymous
 //function which returns your name.
 
   //Code Here
-  
+
 
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-  
-  
+
+
 
 //Now invoke innerFn and save the result to a variable called finalResult.
 
   //Code Here
-  
