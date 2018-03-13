@@ -54,7 +54,7 @@ describe('js-day1-basic-assessment', function() {
     })
     it('should be made with an arrow function assignment', function(){
       let str = finalGreeting.toString();
-      let match = !!str.match(/pr=>/);
+      let match = !!str.match(/=>/);
       expect(match).toBe(true);
     })
     it('should return "Hello, Trogdor" if passed "Trogdor"', function() {
