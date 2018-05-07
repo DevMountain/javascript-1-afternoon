@@ -37,7 +37,7 @@ describe('js-day1-basic-assessment', function() {
     })
     it('should be made with an anonymous functon assignment', function(){
       let str = newGreeting.toString();
-      let match = !!str.match(/function \(/);
+      let match = !!str.match(/function\s*\(/);
       expect(match).toBe(true);
     })
     it('should return "Hello, Trogdor" if passed "Trogdor"', function() {
