@@ -5,32 +5,28 @@
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
 
-function greeting(name) {
-  return "Hello, " + name
-}
+//Code here
 
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-var newGreeting = function (name) {
-  return "Hello, " + name  
-}
+//Code Here
 
 //////////////////PROBLEM 3////////////////////
 
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
-var finalGreeting = name => "Hello, " + name
+//Code Here
 
 //////////////////PROBLEM 4////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-var groceries = ["apples", "milk", "eggs", "bread"]
+//Code Here
 
 //Write a function called doubleCheck that takes in an array
 //as a parameter.
@@ -38,12 +34,7 @@ var groceries = ["apples", "milk", "eggs", "bread"]
 //If the array does not contain "chocolate", add "chocolate".
 //doubleCheck should return the array.
 
-function doubleCheck(arr) {
-  if(arr.indexOf('chocolate') === -1) {
-    arr.push('chocolate')
-  }
-  return arr
-}
+//Code Here
 
 //////////////////PROBLEM 5////////////////////
 
@@ -52,26 +43,21 @@ function doubleCheck(arr) {
 //name (a string), color: (a string), age (a number),
 //and goodBoy (a boolean).
 
-var dog = {
-  name: 'dog',
-  color: 'yellow',
-  age: 9,
-  goodBoy: true
-}
+//Code Here
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-var devMountainClassPet = dog.name
+//Code Here
 
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof".
 
-dog.bark = () => "Woof woof"
+//Code Here
 
 //Store the result of invoking the bark method in a variable called ruff.
 
-var ruff = dog.bark()
+//Code Here
 
 //////////////////PROBLEM 6////////////////////
 
@@ -84,15 +70,7 @@ var ruff = dog.bark()
 
 //Return mySum.
 
-function looper(arr) {
-  var mySum = 0
-  for (let i = 0; i < arr.length; i++) {
-    if(arr[i] % 2 !== 0 || arr[i] >= 100) {
-      mySum += arr[i]
-    }
-  }
-  return mySum
-}
+//Code Here
 
 //////////////////PROBLEM 7////////////////////
 
@@ -105,14 +83,12 @@ function math(num1, num2, callback) {
 //Write a function called add that takes in two parameters and
 //returns the result of adding them together.
 
-function add(x, y) {
-  return x + y
-}
+//Code Here
 
 //Now invoke math, passing in the numbers 3 and 4, and your add function,
 //storing the result in the variable mathSum.
 
-var mathSum = math(3, 4, add)
+//Code Here
 
 //////////////////PROBLEM 8////////////////////
 
@@ -127,9 +103,7 @@ function sampleCallbackTwo() {
   return "I am also a callback function";
 }
 
-function invoker(cb) {
-  return cb()
-}
+//Code Here
 
 //////////////////PROBLEM 9////////////////////
 
@@ -153,32 +127,28 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck"];
+let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "rubberDuck"];
+let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "realDuck"];
+let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
 //////////////////PROBLEM 10////////////////////
 
 //Create a function called outerFn which returns an anonymous
 //function which returns your name.
 
-function outerFn() {
-  return function() {
-    return 'blair'
-  }
-}
+//Code Here
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
-var innerFn = outerFn()
+//Code Here
 
 //Now invoke innerFn and save the result to a variable called finalResult.
 
-var finalResult = innerFn()
+//Code Here
