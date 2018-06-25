@@ -20,7 +20,7 @@ describe('js-day1-basic-assessment', function() {
     })
     it('should be made with a functon delceration', function(){
       let str = greeting.toString();
-      let match = !!str.match(/function greeting\(/);
+      let match = !!str.match(/function greeting\s?\(/);
       expect(match).toBe(true);
     })
     it('should return "Hello, Trogdor" if passed "Trogdor"', function() {
