@@ -42,18 +42,25 @@ var groceries = ["apples", "milk", "eggs", "bread"];
 //doubleCheck should return the array.
 
 //Code Here
+// function doubleCheck(arr){
+//   let containsChocolate = false;
+//   for(let i = 0; i < arr.length; i++){
+//     if(arr[i] === "chocolate"){
+//       containsChocolate = true;
+//     }
+//   } 
+//   if(!containsChocolate){
+//     arr.push("chocolate");
+//   }
+//   return arr;
+// }
 function doubleCheck(arr){
-  let containsChocolate = false;
-  for(let i = 0; i < arr.length; i++){
-    if(arr[i] === "chocolate"){
-      containsChocolate = true;
-    }
-  } 
-  if(!containsChocolate){
-    arr.push("chocolate");
-  }
-  return arr;
-}
+ var containsChocolate = arr.indexOf("chocolate");
+ if(containsChocolate === -1){
+   arr.push("chocolate");
+ }
+ return arr;
+};
 //////////////////PROBLEM 5////////////////////
 
 //Create an object saved to the variable dog.
