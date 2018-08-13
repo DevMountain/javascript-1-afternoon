@@ -154,7 +154,7 @@ function bathroom() {
 }
 
 function pond() {
-  let realDuck = "fluffy";
+  let realDuck = "fluffy"; 
 }
 
 //There are 4 variables above: duck, rubberDuck, sailorDuck and realDuck
