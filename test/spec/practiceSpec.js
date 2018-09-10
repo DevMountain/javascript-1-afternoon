@@ -79,10 +79,10 @@ describe('js-day1-basic-assessment', function() {
       let vals = ["apples", "milk", "eggs", "bread"]
       expect(Array.isArray(doubleCheck(vals))).toBe(true);
     })
-    it('doubleCheck should return array that contains chocolate', function() {
+    it('doubleCheck should return array that contains chocolate only once', function() {
       let vals = ["apples", "milk", "eggs", "bread"]
-      let newArr = doubleCheck(vals)
-      expect(newArr.includes("chocolate")).toBe(true);
+      let newArr = doubleCheck(vals).filter( val => val === 'chocolate');
+      expect(newArr.length).toBe(1);
     })
     it('doubleCheck should not remove anything from the array', function() {
       let vals = ["apples", "milk", "eggs", "bread"]
