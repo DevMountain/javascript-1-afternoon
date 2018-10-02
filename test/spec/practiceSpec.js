@@ -36,14 +36,17 @@ describe("js-day1-basic-assessment", function() {
     it("should exist", function() {
       expect(newGreeting).toBeDefined();
     });
+
     it("should be made with an anonymous functon assignment", function() {
       let str = newGreeting.toString();
       let match = !!str.match(/function\s*\(/);
       expect(match).toBe(true);
     });
+
     it('should return "Hello, Trogdor" if passed "Trogdor"', function() {
       expect(newGreeting("Trogdor")).toBe("Hello, Trogdor");
     });
+
     it('should return "Hello, undefined" if passed nothing', function() {
       expect(newGreeting()).toBe("Hello, undefined");
     });
@@ -53,14 +56,17 @@ describe("js-day1-basic-assessment", function() {
     it("should exist", function() {
       expect(finalGreeting).toBeDefined();
     });
+
     it("should be made with an arrow function assignment", function() {
       let str = finalGreeting.toString();
       let match = !!str.match(/=>/);
       expect(match).toBe(true);
     });
+
     it('should return "Hello, Trogdor" if passed "Trogdor"', function() {
       expect(finalGreeting("Trogdor")).toBe("Hello, Trogdor");
     });
+
     it('should return "Hello, undefined" if passed nothing', function() {
       expect(finalGreeting()).toBe("Hello, undefined");
     });
@@ -70,6 +76,7 @@ describe("js-day1-basic-assessment", function() {
     it("groceries should exist", function() {
       expect(groceries).toBeDefined();
     });
+
     it("groceries should contain given values", function() {
       let vals = ["apples", "milk", "eggs", "bread"];
       let allGood = arrayIncludes(groceries, vals);
@@ -80,11 +87,13 @@ describe("js-day1-basic-assessment", function() {
       let vals = ["apples", "milk", "eggs", "bread"];
       expect(Array.isArray(doubleCheck(vals))).toBe(true);
     });
+
     it("doubleCheck should return array that contains chocolate only once", function() {
       let vals = ["apples", "milk", "eggs", "bread"];
       let newArr = doubleCheck(vals).filter(val => val === "chocolate");
       expect(newArr.length).toBe(1);
     });
+
     it("doubleCheck should not remove anything from the array", function() {
       let vals = ["apples", "milk", "eggs", "bread"];
       let newArr = doubleCheck(vals);
@@ -100,12 +109,15 @@ describe("js-day1-basic-assessment", function() {
       expect(typeof dog.age).toEqual("number");
       expect(typeof dog.goodBoy).toEqual("boolean");
     });
+
     it("should properly assign the dog name", function() {
       expect(devMountainClassPet).toBe(dog.name);
     });
+
     it("dog should have a bark method", function() {
       expect(typeof dog.bark).toBe("function");
     });
+
     it("dog.bark should return 'Woof woof'", function() {
       expect(dog.bark()).toBe("Woof woof");
     });
@@ -113,6 +125,7 @@ describe("js-day1-basic-assessment", function() {
     it("ruff should exist", function() {
       expect(ruff).toBeDefined();
     });
+
     it("ruff should be 'Woof woof'", function() {
       expect(ruff).toBe("Woof woof");
     });
@@ -123,9 +136,11 @@ describe("js-day1-basic-assessment", function() {
       expect(looper).toBeDefined();
       expect(typeof looper).toBe("function");
     });
+
     it("looper should return 1109 when passed [1, 2, 3, 5, 100, 1000, 6]", function() {
       expect(looper([1, 2, 3, 5, 100, 1000, 6])).toEqual(1109);
     });
+
     it("looper should loop through the array and sum all odd numbers & number greater than 100 (inclusive)", function() {
       myArr = [3, 5, 250, 4, 2];
       let correct = looper(myArr) === 258;
@@ -137,6 +152,7 @@ describe("js-day1-basic-assessment", function() {
     it("add should exist", function() {
       expect(add).toBeDefined();
     });
+
     it("add should return the sum of its two parameters", function() {
       expect(add(1, 2) === 3 && add("hello", "world") === "helloworld").toBe(
         true
@@ -152,12 +168,15 @@ describe("js-day1-basic-assessment", function() {
     it("invoker should exist", function() {
       expect(invoker).toBeDefined();
     });
+
     it("invoker should return 'I am a callback function' when passed sampleCallbackOne", function() {
       expect(invoker(sampleCallbackOne)).toBe("I am a callback function");
     });
+
     it("invoker should return 'I am also a callback function' when passed sampleCallbackTwo", function() {
       expect(invoker(sampleCallbackTwo)).toBe("I am also a callback function");
     });
+
     it("invoker should return 'ducks are cute' when passed the anonymous function () => 'ducks are cute'", function() {
       expect(invoker(() => "ducks are cute")).toBe("ducks are cute");
     });
@@ -172,6 +191,7 @@ describe("js-day1-basic-assessment", function() {
         globalScope.includes("realDuck");
       expect(containsGlobals && !containsOutOfScopeVars).toBe(true);
     });
+
     it("bathroomScope should contain only variables accessible in the scope of the function bathroom", function() {
       let containsGlobals = arrayIncludes(bathroomScope, [
         "duck",
@@ -182,6 +202,7 @@ describe("js-day1-basic-assessment", function() {
         bathroomScope.includes("realDuck");
       expect(containsGlobals && !containsOutOfScopeVars).toBe(true);
     });
+
     it("bathtubScope should contain only variables accessible in the scope of the function bathtub", function() {
       let containsGlobals = arrayIncludes(bathtubScope, [
         "duck",
@@ -191,6 +212,7 @@ describe("js-day1-basic-assessment", function() {
       let containsOutOfScopeVars = bathtubScope.includes("realDuck");
       expect(containsGlobals && !containsOutOfScopeVars).toBe(true);
     });
+
     it("pondScope should contain only variables accessible in the scope of the function pond", function() {
       let containsGlobals = arrayIncludes(pondScope, ["duck", "realDuck"]);
       let containsOutOfScopeVars =
@@ -203,9 +225,11 @@ describe("js-day1-basic-assessment", function() {
     it("outerFn should exist", function() {
       expect(outerFn).toBeDefined();
     });
+
     it("outerFn should return a function", function() {
       expect(typeof outerFn()).toBe("function");
     });
+
     it("outerFn should return a function that returns a string", function() {
       expect(typeof outerFn()()).toBe("string");
     });
@@ -213,9 +237,11 @@ describe("js-day1-basic-assessment", function() {
     it("innerFn should exist", function() {
       expect(outerFn).toBeDefined();
     });
+
     it("innerFn should be a function", function() {
       expect(typeof innerFn).toBe("function");
     });
+
     it("innerFn should return a string", function() {
       expect(typeof innerFn()).toBe("string");
     });
@@ -223,6 +249,7 @@ describe("js-day1-basic-assessment", function() {
     it("finalResult should exist", function() {
       expect(finalResult).toBeDefined();
     });
+
     it("innerFn should return a string", function() {
       expect(typeof finalResult).toBe("string");
     });
