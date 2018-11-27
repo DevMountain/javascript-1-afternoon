@@ -174,7 +174,7 @@ function pond() {
 let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "rubberDuck"];
+let bathroomScope = ["duck", "rubberDuck", 'sailorDuck'];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
 let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
@@ -190,7 +190,7 @@ let pondScope = ["duck", "realDuck"];
 //Code Here
 function outerFn(){ return function (){ return "Kenny" } };
 //Now save the result of invoking outerFn into a variable called innerFn.
-innerFn = outerFn();
+let innerFn = outerFn();
 //Code Here
 
 //Now invoke innerFn and save the result to a variable called finalResult.
