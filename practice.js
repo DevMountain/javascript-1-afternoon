@@ -143,6 +143,9 @@ let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
 //////////////////PROBLEM 10////////////////////
 
+//assign a string of your name to the name variable
+var name = 
+
 //Create a function called outerFn which returns an anonymous
 //function which returns your name.
 
