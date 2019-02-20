@@ -6,9 +6,7 @@
 //plus the value of the name parameter.
 
 //Code here
-function greeting(name) {
-  return `Hello, ${name}`
-}
+
 
 //////////////////PROBLEM 2////////////////////
 
