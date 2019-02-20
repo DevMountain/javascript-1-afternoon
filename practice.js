@@ -1,40 +1,38 @@
+/////////////// PROBLEM 1 ///////////////
+
 /***
- * #1
- * 
  * Create a function declaration called 'greeting' that
  * accepts 'name' as its only parameter.
  * 'greeting' should return the string "Hello, "
  * plus the value of the name parameter.
- * 
- * Bonus! Use a Template String.
  */
 
 //Code here
 
 
+/////////////// PROBLEM 2 ///////////////
+
 /***
- * #2
- * 
  * Rewrite the function 'greeting' as a function expression
- * then name it 'newGreeting'.
+ * and rename it 'newGreeting'.
  */
 
 //Code Here
 
 
+/////////////// PROBLEM 3 ///////////////
+
 /***
- * #3
- * 
  * Rewrite the function greeting as an arrow function
- * then name it 'finalGreeting'.
+ * and rename it 'finalGreeting'.
  */
 
 //Code Here
 
 
+/////////////// PROBLEM 4 ///////////////
+
 /***
- * #4 
- * 
  * Create an array called 'groceries' with the values
  * "apples", "milk", "eggs", "bread"
  */
@@ -47,18 +45,18 @@
  * 
  * Write a function called 'doubleCheck' that takes in an array as a parameter
  * If the array does not contain "chocolate", add "chocolate".
- * 'doubleCheck' should return the array
+ * 'doubleCheck' needs to return the array
  */
 
 //Code Here
 
 
+/////////////// PROBLEM 5 ///////////////
+
 /***
- * #5
- * 
- * Create an object named 'dog'.
+ * Create an object saved to the variable 'dog'.
  * The 'dog' object should have the following properties:
- * name: (string), color: (string), age (number), goodBoy: (boolean)
+ * name: a string, color: a string, age: a number, goodBoy: a boolean
  */
 
 //Code Here
@@ -87,15 +85,15 @@
 /***
  * #5 Continued...
  * 
- * Invoke the 'bark' method and assign it to the variable called 'ruff'
+ * Invoke the 'bark' method and assign it to a variable called 'ruff'
  */
 
 //Code Here
 
 
+/////////////// PROBLEM 6 ///////////////
+
 /***
- * #6 
- * 
  * Write a function called 'looper' that takes in an array.
  * 'looper' should declare a variable called 'mySum' and set it equal to 0.
  * 'looper' should then loop through the array and check each element.
@@ -109,9 +107,9 @@
 //Code Here
 
 
+/////////////// PROBLEM 7 ///////////////
+
 /***
- * #7 
- * 
  * Given the following function called 'math'
  */
 
@@ -141,10 +139,10 @@ function math(num1, num2, callback) {
 //Code Here
 
 
+/////////////// PROBLEM 8 ///////////////
+
 /***
- * #8 
- * 
- * Write a function called 'invoker' that takes in a callback function as a parameter.
+ * Write a function called 'invoker' that takes in a function as a parameter.
  * 'invoker' should return the result of invoking the callback.
  */
 
@@ -159,9 +157,11 @@ function sampleCallbackTwo() {
 //Code Here
 
 
+/////////////// PROBLEM 9 ///////////////
+
 /***
- * #9 
- * 
+ * The 4 variables below: 'duck', 'rubberDuck', 'sailorDuck' and 'realDuck'
+ * are all within different scopes.
  */
 
 
@@ -181,9 +181,6 @@ function pond() {
 /***
  * #9 Continued...
  * 
- * The 4 variables above: 'duck', 'rubberDuck', 'sailorDuck' and 'realDuck'
- * are all within different scopes.
- * 
  * Given the functions and variables above, edit the arrays
  * below to contain only the appropriate variable names as strings.
  */
@@ -201,9 +198,9 @@ let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
 
+/////////////// PROBLEM 10 ///////////////
+
 /***
- * #10 
- * 
  * Create a function called 'outerFn' that returns an 
  * anonymous function which returns your name.
  */
