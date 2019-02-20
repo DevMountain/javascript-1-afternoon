@@ -178,7 +178,7 @@ describe('js-day1-basic-assessment', function() {
     });
     it("bathroomScope should contain only variables accessible in the scope of the function bathroom", function() {
       let containsGlobals = arrayIncludes(bathroomScope, ["duck", "rubberDuck"])
-      let containsOutOfScopeVars = (bathroomScope.includes("sailorDuck") &&
+      let containsOutOfScopeVars = (bathroomScope.includes("sailorDuck") ||
         bathroomScope.includes("realDuck"))
       expect(containsGlobals && !containsOutOfScopeVars).toBe(true);
     });
