@@ -1,5 +1,35 @@
 //////////////////PROBLEM 1////////////////////
 
+//Create a variable called myName that is a string data type
+
+//Code here
+
+//////////////////PROBLEM 2////////////////////
+
+//Create a variable called myAge that is a number data type
+
+//Code here
+
+//////////////////PROBLEM 3////////////////////
+
+//Create a variable called lovesCode that is a boolean data type
+
+//Code here
+
+//////////////////PROBLEM 4////////////////////
+
+//Create a variable called greatestFear that is undefined because we fear nothing
+
+//Code here
+
+//////////////////PROBLEM 5////////////////////
+
+//Create a variable called devMountainGoal that is null because we are just starting out
+
+//Code here
+
+//////////////////PROBLEM 6////////////////////
+
 //Create a function declaration called greeting that
 //accepts name as its only parameter.
 //greeting should return the string "Hello, "
@@ -8,40 +38,32 @@
 //Code here
 
 
-//////////////////PROBLEM 2////////////////////
+//////////////////PROBLEM 7////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
 //Code Here
 
-//////////////////PROBLEM 3////////////////////
+//////////////////PROBLEM 8////////////////////
 
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
 //Code Here
 
-//////////////////PROBLEM 4////////////////////
+//////////////////PROBLEM 9////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
 
-//Write a function called doubleCheck that takes in an array
-//as a parameter.
-
-//If the array does not contain "chocolate", add "chocolate".
-//doubleCheck should return the array.
-
-//Code Here
-
-//////////////////PROBLEM 5////////////////////
+//////////////////PROBLEM 10////////////////////
 
 //Create an object saved to the variable dog.
 //The dog object should have the following properties:
-//name (a string), color: (a string), age (a number),
+//name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
 
 //Code Here
@@ -51,62 +73,42 @@
 
 //Code Here
 
-//Add a method to dog called bark.
-//The value of bark should be a function that returns the string "Woof woof".
+//////////////////PROBLEM 11////////////////////
+
+//Write a function called nameCheck that takes in a name parameter. 
+//nameCheck should check if the name equals 'Steven'. If it does,
+// return 'What is up Steven?'
+//If the name parameter is Bryan, return 'Hey Bryan!'
+// If the name parameter is anything else, return 'Cool name, NAMEPARAM'
+// with NAMEPARAM being the name parameter being passed in
+
+// Code here
+
+//////////////////PROBLEM 12////////////////////
+
+// Create a function called add that takes in two parameters
+// that will be numbers.
+// The add function should return the two parameters added together
 
 //Code Here
 
-//Store the result of invoking the bark method in a variable called ruff.
-
-//Code Here
-
-//////////////////PROBLEM 6////////////////////
-
-//Write a function called looper that takes in an array. looper should declare
-//a variable called mySum and set it equal to 0. looper should then loop through
-//the array and check each element.
-
-//If the element is odd, or if the element is greater than or equal to 100, add the element
-//to the mySum variable total.
-
-//Return mySum.
-
-//Code Here
-
-//////////////////PROBLEM 7////////////////////
-
-//Given the following function called math
-
-function math(num1, num2, callback) {
-  return callback(num1, num2);
-}
-
-//Write a function called add that takes in two parameters and
-//returns the result of adding them together.
-
-//Code Here
-
-//Now invoke math, passing in the numbers 3 and 4, and your add function,
+//Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
 
 //Code Here
 
-//////////////////PROBLEM 8////////////////////
+//////////////////PROBLEM 13////////////////////
 
-//Write a function called invoker that takes in one paramter, a callback function.
-//invoker should return the result of invoking the callback.
+//Write a function called faveColorFinder that takes in one parameter called color
+// that will be a string.
+// If the passed in color equals 'red', return 'red is a great color'
+// If the passed in color equals 'green', return 'green is a solid favorite color'
+// If the passed in color equals 'black', return 'so trendy'
+// Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-function sampleCallbackOne() {
-  return "I am a callback function";
-}
+// Code here
 
-function sampleCallbackTwo() {
-  return "I am also a callback function";
-}
-
-//Code Here
-
-//////////////////PROBLEM 9////////////////////
+//////////////////PROBLEM 14////////////////////
 
 let duck = "cute";
 
@@ -139,17 +141,17 @@ let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 //This array should contain the variable names (as strings) accessible in the pond function.
 let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
-//////////////////PROBLEM 10////////////////////
+//////////////////PROBLEM 15////////////////////
 
-//Create a function called outerFn which returns an anonymous
-//function which returns your name.
+//Create a variable called age with your age assigned to you
 
-//Code Here
+// Code Here
 
-//Now save the result of invoking outerFn into a variable called innerFn.
+// FLASH FORWARD TO NEXT YEAR
+// reassign the value of age to be one greater than it was, because, we all get older
 
-//Code Here
+// Code Here
 
-//Now invoke innerFn and save the result to a variable called finalResult.
+// Good news! We can live forever. Set your age to 999
 
-//Code Here
+// Code Here

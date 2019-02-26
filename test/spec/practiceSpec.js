@@ -1,231 +1,226 @@
 //Helper Function
 function arrayIncludes(arr, values) {
-  let allGood = true;
-  for (let i = 0; i < values.length; i++) {
-    if (!arr.includes(values[i])) {
-      allGood = false
-      break
-    }
-  }
-  return allGood
+	let allGood = true
+	for (let i = 0; i < values.length; i++) {
+		if (!arr.includes(values[i])) {
+			allGood = false
+			break
+		}
+	}
+	return allGood
 }
 
 //Test Suite
 describe('js-day1-basic-assessment', function() {
-
-
-  describe('Problem 1 - greeting', function() {
-    it('should exist', function() {
-      expect(greeting).toBeDefined();
+  describe('Problem 1 - myName', function () {
+    it('myName variable should exist', function () {
+      expect(myName).toBeDefined()
     })
-    it('should be made with a functon delceration', function(){
-      let str = greeting.toString();
-      let match = !!str.match(/function greeting\s?\(/);
-      expect(match).toBe(true);
-    })
-    it('should return "Hello, Trogdor" if passed "Trogdor"', function() {
-      expect(greeting('Trogdor')).toBe('Hello, Trogdor');
-    })
-    it('should return "Hello, undefined" if passed nothing', function() {
-      expect(greeting()).toBe("Hello, undefined");
+    it('should be the correct data type', function () {
+      expect(typeof myName).toBe('string')
     })
   })
-
-  describe('Problem 2 - newGreeting', function() {
-    it('should exist', function() {
-      expect(newGreeting).toBeDefined();
+  describe('Problem 2 - myAge', function () {
+    it('myAge variable should exist', function () {
+      expect(myAge).toBeDefined()
     })
-    it('should be made with an anonymous functon assignment', function(){
-      let str = newGreeting.toString();
-      let match = !!str.match(/function\s*\(/);
-      expect(match).toBe(true);
-    })
-    it('should return "Hello, Trogdor" if passed "Trogdor"', function() {
-      expect(newGreeting('Trogdor')).toBe('Hello, Trogdor');
-    })
-    it('should return "Hello, undefined" if passed nothing', function() {
-      expect(newGreeting()).toBe("Hello, undefined");
+    it('should be the correct data type', function () {
+      expect(typeof myAge).toBe('number')
     })
   })
-
-  describe('Problem 3 - finalGreeting', function() {
-    it('should exist', function() {
-      expect(finalGreeting).toBeDefined();
+  describe('Problem 3 - myName', function () {
+    it('lovesCode variable should exist', function () {
+      expect(lovesCode).toBeDefined()
     })
-    it('should be made with an arrow function assignment', function(){
-      let str = finalGreeting.toString();
-      let match = !!str.match(/=>/);
-      expect(match).toBe(true);
-    })
-    it('should return "Hello, Trogdor" if passed "Trogdor"', function() {
-      expect(finalGreeting('Trogdor')).toBe('Hello, Trogdor');
-    })
-    it('should return "Hello, undefined" if passed nothing', function() {
-      expect(finalGreeting()).toBe("Hello, undefined");
+    it('should be the correct data type', function () {
+      expect(typeof lovesCode).toBe('boolean')
     })
   })
-
-  describe('Problem 4 - ', function() {
-    it('groceries should exist', function() {
-      expect(groceries).toBeDefined();
-    })
-    it('groceries should contain given values', function() {
-      let vals = ["apples", "milk", "eggs", "bread"]
-      let allGood = arrayIncludes(groceries, vals)
-      expect(allGood).toBe(true);
-    })
-
-    it('doubleCheck should return type Array', function() {
-      let vals = ["apples", "milk", "eggs", "bread"]
-      expect(Array.isArray(doubleCheck(vals))).toBe(true);
-    })
-    it('doubleCheck should return array that contains chocolate only once', function() {
-      let vals = ["apples", "milk", "eggs", "bread"]
-      let newArr = doubleCheck(vals).filter( val => val === 'chocolate');
-      expect(newArr.length).toBe(1);
-    })
-    it('doubleCheck should not remove anything from the array', function() {
-      let vals = ["apples", "milk", "eggs", "bread"]
-      let newArr = doubleCheck(vals)
-      expect(arrayIncludes(newArr, vals)).toBe(true);
-    })
-
-  })
-
-  describe('Problem 5 - ', function() {
-    it('dog should exist with the right properties', function() {
-      expect(dog).toBeDefined()
-      expect(typeof dog.name).toEqual('string')
-      expect(typeof dog.color).toEqual('string')
-      expect(typeof dog.age).toEqual('number')
-      expect(typeof dog.goodBoy).toEqual('boolean')
-    })
-    it("should properly assign the dog name", function() {
-      expect(devMountainClassPet).toBe(dog.name);
-    });
-    it("dog should have a bark method", function() {
-      expect(typeof dog.bark).toBe('function');
-    });
-    it("dog.bark should return 'Woof woof'", function() {
-      expect(dog.bark()).toBe('Woof woof');
-    });
-
-    it("ruff should exist", function() {
-      expect(ruff).toBeDefined();
-    });
-    it("ruff should be 'Woof woof'", function() {
-      expect(ruff).toBe('Woof woof');
-    });
-
-  })
-
-  describe('Problem 6 - ', function() {
-    it('looper should exist', function() {
-      expect(looper).toBeDefined()
-      expect(typeof looper).toBe('function')
-    })
-    it('looper should return 1109 when passed [1, 2, 3, 5, 100, 1000, 6]', function() {
-      expect(looper([1, 2, 3, 5, 100, 1000, 6])).toEqual(1109)
-    })
-    it('looper should loop through the array and sum all odd numbers & number greater than 100 (inclusive)', function() {
-      myArr = [3, 5, 250, 4, 2]
-      let correct = looper(myArr) === 258
-      expect(correct).toEqual(true)
+  describe('Problem 4 - greatestFear', function () {
+    it('greatestFear variable should exist', function () {
+      expect(greatestFear).toBeDefined()
+      expect(typeof greatestFear).toBe('undefined')
     })
   })
-
-  describe('Problem 7 - ', function() {
-
-    it("add should exist", function() {
-      expect(add).toBeDefined();
-    });
-    it("add should return the sum of its two parameters", function() {
-      expect(add(1, 2) === 3 && add('hello', 'world') === 'helloworld').toBe(true);
-    });
-
-    it("mathSum should be 7", function() {
-      expect(mathSum === 7 && math(5, 9, add) === 14).toBe(true);
-    });
-
+  describe('Problem 5 - devMountainGoal', function () {
+    it('devMountainGoal variable should exist', function () {
+      expect(devMountainGoal).toBeDefined()
+    })
+    it('should be the correct data type', function () {
+      expect(typeof devMountainGoal).toBe('object')
+    })
   })
+	describe('Problem 6 - greeting', function() {
+		it('should exist', function() {
+			expect(greeting).toBeDefined()
+		})
+		it('should be made with a functon delceration', function() {
+			let str = greeting.toString()
+			let match = !!str.match(/function greeting\s?\(/)
+			expect(match).toBe(true)
+		})
+		it('should return "Hello, Trogdor" if passed "Trogdor"', function() {
+			expect(greeting('Trogdor')).toBe('Hello, Trogdor')
+		})
+		it('should return "Hello, undefined" if passed nothing', function() {
+			expect(greeting()).toBe('Hello, undefined')
+		})
+	})
 
-  describe('Problem 8 - ', function() {
+	describe('Problem 7 - newGreeting', function() {
+		it('should exist', function() {
+			expect(newGreeting).toBeDefined()
+		})
+		it('should be made with an anonymous functon assignment', function() {
+			let str = newGreeting.toString()
+			let match = !!str.match(/function\s*\(/)
+			expect(match).toBe(true)
+		})
+		it('should return "Hello, Trogdor" if passed "Trogdor"', function() {
+			expect(newGreeting('Trogdor')).toBe('Hello, Trogdor')
+		})
+		it('should return "Hello, undefined" if passed nothing', function() {
+			expect(newGreeting()).toBe('Hello, undefined')
+		})
+	})
 
-    it("invoker should exist", function() {
-      expect(invoker).toBeDefined();
-    });
-    it("invoker should return 'I am a callback function' when passed sampleCallbackOne", function() {
-      expect(invoker(sampleCallbackOne)).toBe('I am a callback function');
-    });
-    it("invoker should return 'I am also a callback function' when passed sampleCallbackTwo", function() {
-      expect(invoker(sampleCallbackTwo)).toBe('I am also a callback function');
-    });
-    it("invoker should return 'ducks are cute' when passed the anonymous function () => 'ducks are cute'", function() {
-      expect(invoker(() => 'ducks are cute')).toBe('ducks are cute');
-    });
+	describe('Problem 8 - finalGreeting', function() {
+		it('should exist', function() {
+			expect(finalGreeting).toBeDefined()
+		})
+		it('should be made with an arrow function assignment', function() {
+			let str = finalGreeting.toString()
+			let match = !!str.match(/=>/)
+			expect(match).toBe(true)
+		})
+		it('should return "Hello, Trogdor" if passed "Trogdor"', function() {
+			expect(finalGreeting('Trogdor')).toBe('Hello, Trogdor')
+		})
+		it('should return "Hello, undefined" if passed nothing', function() {
+			expect(finalGreeting()).toBe('Hello, undefined')
+		})
+	})
 
+	describe('Problem 9 - ', function() {
+		it('groceries should exist', function() {
+			expect(groceries).toBeDefined()
+		})
+		it('groceries should contain given values', function() {
+			let vals = ['apples', 'milk', 'eggs', 'bread']
+			let allGood = arrayIncludes(groceries, vals)
+			expect(allGood).toBe(true)
+		})
+	})
 
-  })
+	describe('Problem 10 - ', function() {
+		it('dog should exist with the right properties', function() {
+			expect(dog).toBeDefined()
+			expect(typeof dog.name).toEqual('string')
+			expect(typeof dog.color).toEqual('string')
+			expect(typeof dog.age).toEqual('number')
+			expect(typeof dog.goodBoy).toEqual('boolean')
+		})
+		it('should properly assign the dog name', function() {
+			expect(devMountainClassPet).toBe(dog.name)
+		})
+	})
 
-  describe('Problem 9 - ', function() {
+	describe('Problem 11 - ', function() {
+		it('nameCheck should exist', function() {
+			expect(nameCheck).toBeDefined()
+			expect(typeof nameCheck).toBe('function')
+		})
+		it('nameCheck should return the correct string when passed Steven', function() {
+			expect(nameCheck('Steven')).toEqual('What is up Steven?')
+		})
+		it('nameCheck should return the correct string when passed Bryan', function() {
+			expect(nameCheck('Bryan')).toEqual('Hey Bryan!')
+		})
+		it('nameCheck should return the correct string when passed Joe', function() {
+			expect(nameCheck('Joe')).toEqual('Cool name, Joe')
+		})
+	})
 
-    it("globalScope should contain only variables accessible in the global scope", function() {
-      let containsGlobals = arrayIncludes(globalScope, ["duck"])
-      let containsOutOfScopeVars = (globalScope.includes("sailorDuck") &&
-        globalScope.includes("rubberDuck") &&
-        globalScope.includes("realDuck"))
-      expect(containsGlobals && !containsOutOfScopeVars).toBe(true);
-    });
-    it("bathroomScope should contain only variables accessible in the scope of the function bathroom", function() {
-      let containsGlobals = arrayIncludes(bathroomScope, ["duck", "rubberDuck"])
-      let containsOutOfScopeVars = (bathroomScope.includes("sailorDuck") ||
-        bathroomScope.includes("realDuck"))
-      expect(containsGlobals && !containsOutOfScopeVars).toBe(true);
-    });
-    it("bathtubScope should contain only variables accessible in the scope of the function bathtub", function() {
-      let containsGlobals = arrayIncludes(bathtubScope, ["duck", "rubberDuck", "sailorDuck"])
-      let containsOutOfScopeVars = bathtubScope.includes("realDuck")
-      expect(containsGlobals && !containsOutOfScopeVars).toBe(true);
-    });
-    it("pondScope should contain only variables accessible in the scope of the function pond", function() {
-      let containsGlobals = arrayIncludes(pondScope, ["duck", "realDuck"])
-      let containsOutOfScopeVars = (pondScope.includes("sailorDuck") &&
-        pondScope.includes("rubberDuck"))
-      expect(containsGlobals && !containsOutOfScopeVars).toBe(true);
-    });
+	describe('Problem 12 - ', function() {
+		it('add should exist', function() {
+			expect(add).toBeDefined()
+		})
+		it('add should return the sum of its two parameters', function() {
+			expect(add(1, 2) === 3 && add('hello', 'world') === 'helloworld').toBe(true)
+		})
 
-  })
+		it('mathSum should be 7', function() {
+			expect(mathSum === 7).toBe(true)
+		})
+	})
 
-  describe('Problem 10 - ', function() {
+	describe('Problem 13 - ', function() {
+		it('faveColorFinder should exist', function() {
+			expect(invoker).toBeDefined()
+		})
+		it('faveColorFinder should return the correct string when passed red', function() {
+			expect(nameCheck('Steven')).toEqual('red is a great color')
+		})
+		it('faveColorFinder should return the correct string when passed green', function() {
+			expect(nameCheck('Bryan')).toEqual('green is a solid favorite color')
+		})
+		it('faveColorFinder should return the correct string when passed black', function() {
+			expect(nameCheck('Joe')).toEqual('so trendy')
+		})
+		it('nameCheck should return the correct string when passed any other color', function() {
+			expect(nameCheck('orange')).toEqual(
+				'you need to evaluate your favorite color choice'
+			)
+		})
+	})
 
-    it("outerFn should exist", function() {
-      expect(outerFn).toBeDefined();
-    });
-    it("outerFn should return a function", function() {
-      expect(typeof outerFn()).toBe('function');
-    });
-    it("outerFn should return a function that returns a string", function() {
-      expect(typeof outerFn()()).toBe('string');
-    });
+	describe('Problem 14 - ', function() {
+		it('globalScope should contain only variables accessible in the global scope', function() {
+			let containsGlobals = arrayIncludes(globalScope, ['duck'])
+			let containsOutOfScopeVars =
+				globalScope.includes('sailorDuck') &&
+				globalScope.includes('rubberDuck') &&
+				globalScope.includes('realDuck')
+			expect(containsGlobals && !containsOutOfScopeVars).toBe(true)
+		})
+		it('bathroomScope should contain only variables accessible in the scope of the function bathroom', function() {
+			let containsGlobals = arrayIncludes(bathroomScope, ['duck', 'rubberDuck'])
+			let containsOutOfScopeVars =
+				bathroomScope.includes('sailorDuck') || bathroomScope.includes('realDuck')
+			expect(containsGlobals && !containsOutOfScopeVars).toBe(true)
+		})
+		it('bathtubScope should contain only variables accessible in the scope of the function bathtub', function() {
+			let containsGlobals = arrayIncludes(bathtubScope, [
+				'duck',
+				'rubberDuck',
+				'sailorDuck'
+			])
+			let containsOutOfScopeVars = bathtubScope.includes('realDuck')
+			expect(containsGlobals && !containsOutOfScopeVars).toBe(true)
+		})
+		it('pondScope should contain only variables accessible in the scope of the function pond', function() {
+			let containsGlobals = arrayIncludes(pondScope, ['duck', 'realDuck'])
+			let containsOutOfScopeVars =
+				pondScope.includes('sailorDuck') && pondScope.includes('rubberDuck')
+			expect(containsGlobals && !containsOutOfScopeVars).toBe(true)
+		})
+	})
 
-    it("innerFn should exist", function() {
-      expect(outerFn).toBeDefined();
-    });
-    it("innerFn should be a function", function() {
-      expect(typeof innerFn).toBe('function');
-    });
-    it("innerFn should return a string", function() {
-      expect(typeof innerFn()).toBe('string');
-    });
-
-    it("finalResult should exist", function() {
-      expect(finalResult).toBeDefined();
-    });
-    it("innerFn should return a string", function() {
-      expect(typeof finalResult).toBe('string');
-    });
-
-
-  })
-
+	describe('Problem 15 - ', function() {
+		let testAge = age
+		it('age should exist', function() {
+			expect(age).toBeDefined()
+		})
+		it('age should be a number', function() {
+			expect(typeof age).toBe('number')
+		})
+		it('age should be the correct number', function() {
+			let secondAge = testAge++
+			expect(secondAge === age).toBe(true)
+		})
+    it('age should be the correct number', function () {
+      testAge = 999
+      expect(age === testAge).toBe(true)
+    })
+	})
 })
