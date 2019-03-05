@@ -38,8 +38,7 @@ describe('js-day1-basic-assessment', function() {
   })
   describe('Problem 4 - greatestFear', function () {
     it('greatestFear variable should exist', function () {
-      expect(greatestFear).toBeDefined()
-      expect(typeof greatestFear).toBe('undefined')
+      expect(greatestFear).toBeUndefined()
     })
   })
   describe('Problem 5 - devMountainGoal', function () {
@@ -156,19 +155,20 @@ describe('js-day1-basic-assessment', function() {
 
 	describe('Problem 13 - ', function() {
 		it('faveColorFinder should exist', function() {
-			expect(invoker).toBeDefined()
+			expect(faveColorFinder).toBeDefined()
+			expect(typeof faveColorFinder).toBe('function')
 		})
 		it('faveColorFinder should return the correct string when passed red', function() {
-			expect(nameCheck('Steven')).toEqual('red is a great color')
+			expect(faveColorFinder('red')).toEqual('red is a great color')
 		})
 		it('faveColorFinder should return the correct string when passed green', function() {
-			expect(nameCheck('Bryan')).toEqual('green is a solid favorite color')
+			expect(faveColorFinder('green')).toEqual('green is a solid favorite color')
 		})
 		it('faveColorFinder should return the correct string when passed black', function() {
-			expect(nameCheck('Joe')).toEqual('so trendy')
+			expect(faveColorFinder('black')).toEqual('so trendy')
 		})
 		it('nameCheck should return the correct string when passed any other color', function() {
-			expect(nameCheck('orange')).toEqual(
+			expect(faveColorFinder('orange')).toEqual(
 				'you need to evaluate your favorite color choice'
 			)
 		})
