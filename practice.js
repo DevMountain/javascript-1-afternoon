@@ -45,21 +45,15 @@
 
 //Code Here
 
+
 //////////////////PROBLEM 8////////////////////
-
-//Rewrite the function greeting as an arrow function.
-//Name it finalGreeting.
-
-//Code Here
-
-//////////////////PROBLEM 9////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
 
-//////////////////PROBLEM 10////////////////////
+//////////////////PROBLEM 9////////////////////
 
 //Create an object saved to the variable dog.
 //The dog object should have the following properties:
@@ -73,7 +67,7 @@
 
 //Code Here
 
-//////////////////PROBLEM 11////////////////////
+//////////////////PROBLEM 10////////////////////
 
 //Write a function called nameCheck that takes in a name parameter. 
 //nameCheck should check if the name equals 'Steven'. If it does,
@@ -84,7 +78,7 @@
 
 // Code here
 
-//////////////////PROBLEM 12////////////////////
+//////////////////PROBLEM 11////////////////////
 
 // Create a function called add that takes in two parameters
 // that will be numbers.
@@ -97,7 +91,7 @@
 
 //Code Here
 
-//////////////////PROBLEM 13////////////////////
+//////////////////PROBLEM 12////////////////////
 
 //Write a function called faveColorFinder that takes in one parameter called color
 // that will be a string.
@@ -108,7 +102,7 @@
 
 // Code here
 
-//////////////////PROBLEM 14////////////////////
+//////////////////PROBLEM 13////////////////////
 
 let duck = "cute";
 
@@ -141,7 +135,7 @@ let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 //This array should contain the variable names (as strings) accessible in the pond function.
 let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
 
-//////////////////PROBLEM 15////////////////////
+//////////////////PROBLEM 14////////////////////
 
 //Create a variable called age with your age assigned to you
 
