@@ -41,11 +41,13 @@ One of the biggest tools at the developer's disposal is the browser's built-in d
 
 <summary> <code> Arrays </code> </summary>
 
+```js
 // declare an empty array
 let myThings = [];
 
 // declare an array with items
 let myThings = ['Bike', 7, {name: 'Jeff'}, ['Catfish']]
+```
 
 </details>
 
@@ -53,6 +55,7 @@ let myThings = ['Bike', 7, {name: 'Jeff'}, ['Catfish']]
 
 <summary> <code> Objects </code> </summary>
 
+```js
 // declare an empty object
 let car = {}
 
@@ -74,6 +77,7 @@ car['miles'] = 150
 // if a property doesn't exist on an object, it's considered undefined
 
 car.owner === undefined // true
+```
 
 </details>
 
