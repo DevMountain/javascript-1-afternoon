@@ -3,6 +3,7 @@
 //Create a variable called myName that is a string data type
 
 //Code here
+var myName = "josh";
 
 //////////////////PROBLEM 2////////////////////
 
@@ -37,14 +38,12 @@
 
 //Code here
 
-
 //////////////////PROBLEM 7////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
 //Code Here
-
 
 //////////////////PROBLEM 8////////////////////
 
@@ -69,7 +68,7 @@
 
 //////////////////PROBLEM 10////////////////////
 
-//Write a function called nameCheck that takes in a name parameter. 
+//Write a function called nameCheck that takes in a name parameter.
 //nameCheck should check if the name equals 'Steven'. If it does,
 // return 'What is up Steven?'
 //If the name parameter is Bryan, return 'Hey Bryan!'
