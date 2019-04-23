@@ -3,7 +3,6 @@
 //Create a variable called myName that is a string data type
 
 //Code here
-var myName = "josh";
 
 //////////////////PROBLEM 2////////////////////
 
