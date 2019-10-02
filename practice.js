@@ -39,8 +39,8 @@
 
 //////////////////PROBLEM 7////////////////////
 
-//Rewrite the function greeting as a function expression.
-//Name it newGreeting.
+//Write a function expression called newGreeting.
+//Give it the same functionality as the function greeting in Problem 6.
 
 //Code Here
 
@@ -72,7 +72,7 @@
 // return 'What is up Steven?'
 //If the name parameter is Bryan, return 'Hey Bryan!'
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
-// with NAMEPARAM being the name parameter being passed in
+// with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 // Code here
 
