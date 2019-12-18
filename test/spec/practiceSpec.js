@@ -150,7 +150,7 @@ describe('js-day1-basic-assessment', function() {
 		it('faveColorFinder should return the correct string when passed black', function() {
 			expect(faveColorFinder('black')).toEqual('so trendy')
 		})
-		it('nameCheck should return the correct string when passed any other color', function() {
+		it('faveColorFinder should return the correct string when passed any other color', function() {
 			expect(faveColorFinder('orange')).toEqual(
 				'you need to evaluate your favorite color choice'
 			)
