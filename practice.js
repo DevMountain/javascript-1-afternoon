@@ -20,7 +20,7 @@ var lovesCode=true;
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
-Let greatestFear;
+var greatestFear;
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
@@ -35,7 +35,7 @@ var devMountainGoal=null;
 //plus the value of the name parameter.
 
 function greeting(name){
-  return "Hello"+name;
+  return "Hello, "+name;
 }
 
 //////////////////PROBLEM 7////////////////////
@@ -43,16 +43,17 @@ function greeting(name){
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-function newGreeting(name){
-  return "Hello"+name;
+var newGreeting=function (name){
+  return "Hello, "+name;
 }
+newGreeting();
 
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
-var groceries=["apples","milk","egg","bread"];
+var groceries=["apples", "milk", "eggs", "bread"];
 
 
 //////////////////PROBLEM 9////////////////////
@@ -64,6 +65,7 @@ var groceries=["apples","milk","egg","bread"];
 
 var dog={
   name:'sammy',
+  color:'black',
   age:4,
   goodBoy:true,
 };
@@ -71,7 +73,7 @@ var dog={
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-devMountainClassPet=dog.name;
+var devMountainClassPet=dog.name;
 
 //////////////////PROBLEM 10////////////////////
 
@@ -84,13 +86,13 @@ devMountainClassPet=dog.name;
 
 function nameCheck(name){
     if(name=="Steven"){
-      return "What is up Steven";
+      return "What is up Steven?";
     }
     else if (name=="Bryan") 
     {
       return "Hey Bryan!";
     } else {
-      return "cool Name"+name;
+      return "Cool name, "+name;
     }
 }
 
@@ -121,15 +123,16 @@ mathSum=add(3,4);
 
 function faveColorFinder(color){
   if(color=="red"){
-    return "red is greate color";
+    return 'red is a great color';
   }
-  else if (color=="green") {
-    return "green is a solid favourite color";
-  }else if(color="black"){
-    return "so trendy"
+  else if(color=="green"){
+    return 'green is a solid favorite color';
   }
- else {
-    return "you need to evaluate your favourite color choice";
+  else if(color=="black"){
+    return'so trendy';
+  }
+  else{
+    return 'you need to evaluate your favorite color choice';
   }
 }
 
@@ -155,16 +158,16 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+var bathroomScope = ["duck","rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+var bathtubScope = ["duck","rubberDuck","sailorDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+var pondScope = ["duck","realDuck"];
 
 //////////////////PROBLEM 14////////////////////
 
