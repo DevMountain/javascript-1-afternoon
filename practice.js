@@ -2,7 +2,7 @@
 
 //Create a variable called myName that is a string data type
 
-var myName="Saddam";
+var myName = "Saddam";
 
 //////////////////PROBLEM 2////////////////////
 
